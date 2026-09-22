@@ -1,0 +1,1341 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Спросить дорогу по-турецки — Alterna Türkçe</title>
+<meta name="description" content="Урок турецкого: как спросить дорогу и понять ответ. Фразы с озвучкой, три суффикса, квест-навигатор, тест. От Тимура Ахметова, Alterna A0→C1.">
+<meta property="og:title" content="Спросить дорогу по-турецки — и понять ответ">
+<meta property="og:description" content="Düz, sağa, ışıklardan sola. Урок с озвучкой, квестом по карте и тестом. Alterna Türkçe A0→C1.">
+<meta property="og:image" content="media/grammar.jpg">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 38 42%22%3E%3Cpath d=%22M19 1 36 11v20L19 41 2 31V11z%22 fill=%22%2316181c%22/%3E%3Cpath d=%22M12.5 29 19 12l6.5 17M15 23h8%22 stroke=%22%23fff%22 stroke-width=%222.6%22 fill=%22none%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#373c45; --ink2:#5b616c; --muted:#8e949e; --line:#e7eaf0;
+  --card:#f6f8fb; --card2:#fbfcfe; --bg:#ffffff;
+  --gold:#d8a53a; --gold2:#f3c552; --goldL:#ffe9a6; --goldD:#b8831e;
+  --sky:#e8eefc; --lav:#eeeafc; --mint:#eaf4ec;
+  --r:18px; --shadow:0 24px 60px -34px rgba(38,56,110,.35);
+  --lava:"https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41";
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Montserrat,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:15px;overflow-x:hidden}
+img,video,svg{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 18px}
+main{overflow-x:clip}
+section{position:relative;padding:72px 0}
+.mist{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.mist i{position:absolute;border-radius:50%;filter:blur(60px);opacity:.75}
+section>.wrap{position:relative;z-index:1}
+
+/* type */
+.eyebrow{display:flex;align-items:center;gap:10px;font-size:11.5px;letter-spacing:.06em;color:var(--muted);margin-bottom:14px}
+.eyebrow:before{content:"";width:26px;height:1.5px;background:var(--ink2);opacity:.6}
+.h1{font-weight:400;text-transform:uppercase;letter-spacing:.06em;font-size:clamp(30px,8.4vw,54px);line-height:1.08;color:var(--ink)}
+.h2{font-weight:300;letter-spacing:.035em;font-size:clamp(25px,6.6vw,40px);line-height:1.2;color:var(--ink)}
+.gold{font-family:"Playfair Display",Georgia,serif;font-weight:500;letter-spacing:.01em;background:linear-gradient(180deg,#e4b44a,#c9922a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--ink2);font-size:14.5px;letter-spacing:.02em;margin-top:14px;max-width:560px}
+.center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
+.small{font-size:12px;color:var(--muted);letter-spacing:.02em}
+.tr{font-weight:600;color:var(--ink)}
+.tx{color:var(--muted);font-size:12.5px}
+
+/* buttons */
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 34px;border-radius:12px;
+  background:linear-gradient(180deg,var(--goldL) 0%,#f8d774 45%,var(--gold2) 100%);
+  color:#43361c;font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;
+  box-shadow:0 18px 30px -14px rgba(232,172,40,.75),inset 0 1px 0 rgba(255,255,255,.8);transition:transform .25s,box-shadow .25s}
+.btn:after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.75),transparent);transform:skewX(-20deg);animation:shine 4.5s ease-in-out infinite}
+.btn:hover{transform:translateY(-2px);box-shadow:0 24px 36px -14px rgba(232,172,40,.85),inset 0 1px 0 rgba(255,255,255,.8)}
+.btn:active{transform:translateY(1px) scale(.99)}
+.btn.block{width:100%}
+@keyframes shine{0%,60%{left:-60%}85%,100%{left:130%}}
+.btn-o{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;height:42px;padding:0 16px;border:1.5px solid #cfd4dc;border-radius:10px;font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--ink2);transition:.25s;background:rgba(255,255,255,.6)}
+.btn-o:hover{border-color:var(--gold);color:var(--goldD)}
+.link-s{display:block;margin-top:14px;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:#e0b54e;text-decoration:none;text-align:center}
+
+/* cards */
+.card{background:var(--card);border-radius:var(--r);box-shadow:var(--shadow)}
+.say{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#fde69a,#f2c24c);box-shadow:0 8px 14px -8px rgba(230,170,40,.9);transition:transform .2s}
+.say svg{width:14px;height:14px;fill:#5b4413}
+.say:hover{transform:scale(1.08)}
+.say.on{animation:pulse 1s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(243,197,82,.25)}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.sc{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;gap:14px;height:66px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo svg{width:38px;height:42px}
+.logo b{display:block;font-size:12.5px;letter-spacing:.04em}
+.logo span{display:none;font-size:10.5px;color:var(--muted);letter-spacing:.02em;line-height:1.3}
+.hdr .mid{display:none;margin-left:auto;text-align:right}
+.hdr .mid b{font-weight:500;font-size:17px;letter-spacing:.04em}
+.hdr .mid span{display:block;font-size:10.5px;color:var(--muted)}
+.hdr .btn-o{margin-left:auto}
+.prog{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:linear-gradient(90deg,var(--goldL),var(--gold))}
+
+/* hero */
+.hero{padding:34px 0 40px;overflow:hidden}
+.hero .mist i:nth-child(1){width:520px;height:420px;background:#dfe6fb;left:-140px;top:-80px}
+.hero .mist i:nth-child(2){width:460px;height:380px;background:#ece6fb;right:-160px;top:120px}
+.hero .mist i:nth-child(3){width:600px;height:200px;background:#fff;left:10%;bottom:-60px;filter:blur(40px);opacity:1}
+.hero-g{display:grid;gap:26px}
+.hero .sub{font-size:12.5px;color:var(--ink2);letter-spacing:.03em;margin-top:12px}
+.ticks{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;margin:24px 0 28px;list-style:none}
+.ticks li{display:flex;gap:8px;font-size:11.5px;color:var(--ink2);letter-spacing:.02em;line-height:1.35}
+.ticks li:before{content:"";flex:none;width:9px;height:9px;border:1.3px solid var(--ink2);border-radius:50%;margin-top:3px}
+.hero-vis{position:relative;min-height:380px}
+.map-card{position:relative;border-radius:26px;background:linear-gradient(180deg,#fbfcff,#f1f4fb);box-shadow:0 40px 80px -40px rgba(38,56,110,.45);overflow:hidden;transform:perspective(1100px) rotateX(10deg) rotateZ(-2deg);transition:transform .6s}
+.map-card svg{width:100%;height:auto}
+.route{fill:none;stroke:url(#gg);stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 3.2s .6s cubic-bezier(.6,.1,.3,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.pin{transform-box:fill-box;transform-origin:50% 100%;opacity:0;animation:drop .7s 3.6s cubic-bezier(.3,1.6,.5,1) forwards}
+@keyframes drop{0%{opacity:0;transform:translateY(-40px) scale(.6)}100%{opacity:1;transform:none}}
+.chip{position:absolute;z-index:2;background:#fff;border-radius:12px;padding:9px 13px;box-shadow:0 14px 30px -16px rgba(38,56,110,.45);font-size:12px;font-weight:600;white-space:nowrap;animation:float 6s ease-in-out infinite}
+.chip small{display:block;font-weight:400;color:var(--muted);font-size:10.5px}
+.chip.c1{left:-4px;top:18px}.chip.c2{right:-2px;top:44%;animation-delay:-2s}.chip.c3{left:12%;bottom:-8px;animation-delay:-4s}
+@keyframes float{50%{transform:translateY(-10px)}}
+.cloud{position:absolute;border-radius:50%;background:#fff;filter:blur(18px);opacity:.9;animation:drift 18s linear infinite}
+@keyframes drift{0%{transform:translateX(-30px)}50%{transform:translateX(30px)}100%{transform:translateX(-30px)}}
+
+/* story */
+.story .mist i:nth-child(1){width:420px;height:420px;background:var(--mint);right:-120px;top:0}
+.story-g{display:grid;gap:30px;align-items:center}
+.story p{font-size:14.5px;color:var(--ink2);letter-spacing:.015em;margin-top:12px}
+.story p b{color:var(--ink);font-weight:600}
+.chat{padding:22px 18px;display:flex;flex-direction:column;gap:10px;min-height:360px;background:linear-gradient(180deg,#fff,#f5f7fc)}
+.chat .top{display:flex;align-items:center;gap:10px;padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:4px}
+.chat .top .ava{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#ffe9a6,#e2ad3c);display:grid;place-items:center;font-weight:700;font-size:12px;color:#5b4413}
+.chat .top b{font-size:13px;display:block}.chat .top span{font-size:11px;color:var(--muted)}
+.bub{max-width:86%;padding:10px 14px;border-radius:16px;font-size:13.5px;line-height:1.45;opacity:0;transform:translateY(10px) scale(.97);transition:.45s}
+.bub.show{opacity:1;transform:none}
+.bub.me{align-self:flex-end;background:linear-gradient(180deg,#fde8a4,#f5cd5f);border-bottom-right-radius:5px;color:#43361c}
+.bub.him{align-self:flex-start;background:#fff;border:1px solid var(--line);border-bottom-left-radius:5px}
+.bub.him .fast{letter-spacing:-.02em}
+.bub small{display:block;font-size:11px;opacity:.7;margin-top:3px}
+.typing{align-self:flex-start;display:none;gap:4px;padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:16px}
+.typing.on{display:flex}
+.typing i{width:6px;height:6px;border-radius:50%;background:#c9ced8;animation:dot 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes dot{50%{transform:translateY(-4px);background:var(--gold)}}
+.author{display:flex;gap:12px;align-items:center;margin-top:22px}
+.author .ava{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#ffe9a6,#e2ad3c);display:grid;place-items:center;font-weight:700;color:#5b4413;flex:none;box-shadow:0 10px 20px -10px rgba(200,140,30,.9)}
+.author b{font-size:13px;display:block}.author span{font-size:11.5px;color:var(--muted);line-height:1.35;display:block}
+
+/* numbers */
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:28px 10px;margin:40px 0 36px}
+.num b{display:block;font-family:"Playfair Display",Georgia,serif;font-weight:500;font-size:clamp(46px,12vw,68px);line-height:1;color:var(--ink);letter-spacing:.02em}
+.num span{display:block;font-size:11.5px;color:var(--ink2);margin-top:12px;letter-spacing:.04em;line-height:1.4}
+
+/* phrases */
+.ph .mist i:nth-child(1){width:480px;height:420px;background:var(--lav);left:-180px;top:40px}
+.ph-g{display:grid;gap:30px}
+.ph-list{display:grid;gap:12px}
+.ph-item{display:flex;gap:14px;align-items:center;padding:16px 18px;border-radius:16px;background:var(--card);transition:transform .25s,box-shadow .25s;cursor:pointer}
+.ph-item:hover{transform:translateX(4px);box-shadow:0 16px 30px -22px rgba(38,56,110,.5)}
+.ph-item .t{flex:1;min-width:0}
+.ph-item .tr{font-size:14.5px;display:block}
+.ph-item .ru{font-size:12.5px;color:var(--ink2)}
+.ph-item .tx{display:block}
+.note{margin-top:18px;padding:16px 18px;border-left:3px solid var(--gold2);background:linear-gradient(90deg,#fff8e6,transparent);border-radius:0 14px 14px 0;font-size:13.5px;color:var(--ink2)}
+.note b{color:var(--ink)}
+
+/* tabs directions */
+.dir .mist i:nth-child(1){width:500px;height:400px;background:var(--sky);right:-180px;top:80px}
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:6px 2px 10px;margin:30px -18px 16px;padding-left:18px;padding-right:18px;scroll-snap-type:x mandatory}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;scroll-snap-align:center;padding:12px 18px;border-radius:12px;border:1.5px solid transparent;font-family:"Playfair Display",Georgia,serif;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);transition:.3s;background:transparent}
+.tab.on{border-color:#f0cf7a;background:#fff;box-shadow:0 10px 24px -16px rgba(200,150,40,.8);color:var(--ink)}
+.dir-g{display:grid;gap:24px;align-items:center}
+.scene{position:relative;max-width:420px;margin:0 auto;width:84%;transform:perspective(900px) rotateX(38deg) rotateZ(-30deg);transform-style:preserve-3d;filter:drop-shadow(0 40px 30px rgba(38,56,110,.25))}
+.scene svg{width:100%;height:auto}
+.bld{transition:fill .5s,transform .5s;transform-box:fill-box;transform-origin:center}
+.bld.hl{fill:url(#gb)!important;transform:scale(1.06)}
+.lbl{font:600 11px Montserrat;fill:var(--ink);opacity:0;transition:opacity .4s}
+.lbl.on{opacity:1}
+.dpath{fill:none;stroke:var(--gold);stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1}
+.walker{fill:#fff;stroke:var(--ink);stroke-width:3}
+.dir-info .price{font-family:"Playfair Display",Georgia,serif;font-size:clamp(30px,8vw,42px);color:var(--ink);line-height:1.1;margin:8px 0 6px}
+.dir-info .k{font-size:12px;color:var(--muted);letter-spacing:.04em}
+.dir-info .ru{font-size:15px;color:var(--ink2)}
+.dir-info .nt{font-size:13px;color:var(--ink2);margin:14px 0 22px;padding-top:14px;border-top:1px solid var(--line)}
+.dir-info .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.fade{animation:fadeIn .5s}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* grammar constructor */
+.gr .mist i:nth-child(1){width:560px;height:360px;background:#fff6dc;left:20%;top:30%}
+.gr-txt p{font-size:14.5px;color:var(--ink2);margin-top:12px}
+.cases{display:grid;gap:12px;margin:26px 0}
+.case{display:flex;gap:14px;align-items:flex-start;padding:16px;border-radius:16px;background:#fff;box-shadow:0 14px 30px -24px rgba(38,56,110,.6)}
+.case .sfx{flex:none;min-width:70px;font-family:"Playfair Display",Georgia,serif;font-size:22px;color:var(--goldD);line-height:1.1}
+.case b{display:block;font-size:13.5px}
+.case span{font-size:12.5px;color:var(--ink2)}
+.builder{padding:22px 18px}
+.builder h3{font-weight:400;font-size:19px;letter-spacing:.02em}
+.lbl2{font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin:18px 0 8px}
+.pills{display:flex;flex-wrap:wrap;gap:7px}
+.pill{padding:8px 12px;border-radius:10px;background:#fff;border:1.5px solid var(--line);font-size:13px;transition:.2s}
+.pill small{color:var(--muted);font-size:10.5px;margin-left:4px}
+.pill.on{border-color:var(--gold2);background:#fff8e3;box-shadow:0 8px 16px -12px rgba(200,150,40,.9)}
+.morph{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:22px 0 8px;min-height:54px}
+.m{padding:10px 14px;border-radius:12px;font-weight:600;font-size:17px;animation:pop .45s cubic-bezier(.3,1.6,.5,1) both}
+.m.root{background:#fff;border:1.5px solid var(--line)}
+.m.buf{background:#eef2fb;color:#4c63a8;border:1.5px dashed #aab8e0}
+.m.sfx{background:linear-gradient(180deg,#fde8a4,#f5cd5f);color:#43361c}
+.m.op{padding:0 2px;font-weight:400;color:var(--muted);animation:none;font-size:18px}
+.m.res{font-family:"Playfair Display",Georgia,serif;font-size:24px;background:none;padding:0 4px;color:var(--ink)}
+@keyframes pop{from{opacity:0;transform:scale(.6) translateY(8px)}to{opacity:1;transform:none}}
+.why{font-size:13px;color:var(--ink2);background:#fff;border-radius:12px;padding:12px 14px;margin-top:10px}
+.why b{color:var(--ink)}
+.ex{display:flex;gap:12px;align-items:center;margin-top:12px}
+.ex .t .tr{display:block;font-size:14px}.ex .t span{font-size:12.5px;color:var(--ink2)}
+
+/* quest */
+.qs .mist i:nth-child(1){width:500px;height:420px;background:var(--lav);left:-120px;top:10%}
+.qs-g{display:grid;gap:24px;align-items:start}
+.qmap{padding:12px;position:relative}
+.qmap svg{width:100%;height:auto;border-radius:14px}
+.qpin{cursor:pointer}
+.qpin circle{transition:transform .2s;transform-box:fill-box;transform-origin:center}
+.qpin:hover circle{transform:scale(1.15)}
+.qpin.ok circle{fill:#7fcf8e}.qpin.bad circle{fill:#f19a8f}
+.qpin.dim{opacity:.35}
+.qcard{padding:22px 18px}
+.qcard .step{font-size:11px;color:var(--muted);letter-spacing:.04em}
+.bar{height:6px;border-radius:6px;background:#e9ecf2;margin:10px 0 18px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--goldL),var(--gold2));border-radius:6px;transition:width .6s}
+.qinstr{font-family:"Playfair Display",Georgia,serif;font-size:21px;line-height:1.35;color:var(--ink)}
+.qfb{margin-top:14px;font-size:13.5px;color:var(--ink2);min-height:44px}
+.qfb b{color:var(--ink)}
+.qfb.good b{color:#3a9a55}.qfb.bad b{color:#d0584a}
+.qcard .row{display:flex;gap:10px;align-items:center;margin-top:16px;flex-wrap:wrap}
+
+/* dialogue */
+.dlg-list{display:grid;gap:10px;max-width:720px;margin:30px auto 0}
+.dl{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:16px;background:var(--card);transition:background .3s}
+.dl.me{background:#fff8e4;margin-left:24px}
+.dl.playing{box-shadow:0 0 0 2px var(--gold2)}
+.dl .who{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:11px;font-weight:700;background:#fff;border:1.5px solid var(--line)}
+.dl.me .who{background:linear-gradient(135deg,#ffe9a6,#e2ad3c);border:0;color:#5b4413}
+.dl .t{flex:1}
+.dl .tr{display:block;font-size:14px;line-height:1.45}
+.dl .ru{font-size:12.5px;color:var(--ink2);display:block;max-height:60px;overflow:hidden;transition:max-height .35s,opacity .35s}
+.hide-ru .dl .ru{max-height:0;opacity:0}
+.dlg-ctl{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.toggle{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--ink2);height:42px;padding:0 14px;border-radius:10px;border:1.5px solid var(--line);background:#fff}
+
+/* tips */
+.tips{display:grid;gap:14px;margin-top:34px}
+.tip{padding:22px 20px;background:#fff;border-radius:18px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.tip .n{font-family:"Playfair Display",Georgia,serif;font-size:56px;line-height:1;color:#f1f3f7;position:absolute;right:14px;top:6px}
+.tip b{display:block;font-size:14.5px;margin-bottom:8px;position:relative}
+.tip p{font-size:13.5px;color:var(--ink2);position:relative}
+
+/* quiz */
+.quiz-g{display:grid;gap:14px;margin-top:34px}
+.quiz{padding:24px 20px}
+.quiz .q{font-weight:500;font-size:16px;margin:4px 0 18px;letter-spacing:.01em}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:center;gap:12px;text-align:left;padding:13px 16px;border-radius:26px;border:1.5px solid transparent;font-size:13px;color:var(--ink2);letter-spacing:.02em;transition:.25s;background:transparent}
+.opt:before{content:"";flex:none;width:16px;height:16px;border-radius:50%;border:1.5px solid #f0c75a;transition:.25s}
+.opt:hover{background:#fff}
+.opt.sel{border-color:#f0cf7a;background:#fff}
+.opt.sel:before{border-width:5px}
+.opt.right{border-color:#8fd19e;background:#f1fbf3}.opt.right:before{border-color:#58b56f;border-width:5px}
+.opt.wrong{border-color:#f3b0a7;background:#fff4f2}.opt.wrong:before{border-color:#e07262}
+.qexp{font-size:12.5px;color:var(--ink2);margin-top:14px;min-height:20px}
+.quiz .btn{margin-top:18px;min-height:52px}
+.yel{border-radius:18px;padding:26px 22px;background:linear-gradient(160deg,#f7cf64,#f2c04a);color:#fff;position:relative;overflow:hidden;min-height:260px}
+.yel p{font-size:15px;font-weight:500;letter-spacing:.08em;line-height:1.45;position:relative;z-index:1;text-shadow:0 1px 0 rgba(160,110,10,.25)}
+.yel img{position:absolute;right:-18px;bottom:-40px;width:58%;border-radius:14px;transform:rotate(-14deg);box-shadow:0 30px 40px -20px rgba(90,60,0,.6)}
+.res{text-align:center;padding:10px 0}
+.res .big{font-family:"Playfair Display",Georgia,serif;font-size:64px;line-height:1}
+
+/* calculator */
+.calc{padding:30px 20px;border-radius:24px;background:var(--card)}
+.sl-g{display:grid;gap:14px;margin:26px 0}
+.sl{background:#fff;border-radius:10px;padding:16px 18px 10px;box-shadow:0 12px 26px -22px rgba(38,56,110,.6)}
+.sl label{font-size:11px;color:var(--muted);letter-spacing:.04em}
+.sl output{display:block;font-family:"Playfair Display",Georgia,serif;font-size:26px;margin:2px 0 6px}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:24px;background:transparent}
+input[type=range]::-webkit-slider-runnable-track{height:2px;background:linear-gradient(90deg,var(--gold2) var(--p,50%),#dde1e8 var(--p,50%))}
+input[type=range]::-moz-range-track{height:2px;background:#dde1e8}
+input[type=range]::-moz-range-progress{height:2px;background:var(--gold2)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:#fff;border:2px solid var(--gold2);margin-top:-8px;box-shadow:0 4px 10px -4px rgba(200,150,40,.9)}
+input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:#fff;border:2px solid var(--gold2)}
+.calc-out{text-align:center}
+.calc-out .big{font-family:"Playfair Display",Georgia,serif;font-size:clamp(40px,11vw,60px);line-height:1;color:var(--ink)}
+.calc-out p{font-size:13.5px;color:var(--ink2);max-width:520px;margin:10px auto 22px}
+
+/* platform — laptop */
+.pl .mist i:nth-child(1){width:560px;height:460px;background:var(--sky);left:-160px;top:0}
+.pl .mist i:nth-child(2){width:460px;height:400px;background:#fdf1d2;right:-160px;bottom:0}
+.pl-g{display:grid;gap:26px;align-items:center}
+.laptop{position:relative;max-width:560px;margin:0 auto;width:100%;transform:perspective(1200px) rotateY(-14deg) rotateX(8deg);transition:transform .5s;transform-style:preserve-3d}
+.lscreen{background:#1b1e24;border-radius:14px 14px 4px 4px;padding:9px 9px 12px;box-shadow:0 40px 60px -30px rgba(20,30,60,.55)}
+.lscreen video,.lscreen img{width:100%;aspect-ratio:1024/486;object-fit:cover;border-radius:4px;background:#eef1f7}
+.lbase{height:14px;margin:0 -7%;background:linear-gradient(180deg,#eef0f4,#c9cdd5);border-radius:0 0 16px 16px;position:relative}
+.lbase:before{content:"";position:absolute;left:42%;right:42%;top:0;height:5px;background:#b7bcc6;border-radius:0 0 6px 6px}
+.play{position:absolute;right:0;top:28%;width:92px;height:92px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffe7a0,#f2c24c 60%,#e3a92f);display:grid;place-items:center;box-shadow:0 20px 40px -14px rgba(220,160,30,.9);transition:transform .3s;z-index:2}
+.play:hover{transform:scale(1.07)}
+.play svg{width:28px;height:28px;fill:#3d3220;margin-left:4px}
+.play.pz svg{margin-left:0}
+.vtabs{display:flex;gap:6px;flex-wrap:wrap;margin:18px 0 6px}
+.vtab{padding:8px 12px;border-radius:10px;font-size:12px;border:1.5px solid var(--line);background:#fff;transition:.25s}
+.vtab.on{border-color:var(--gold2);background:#fff8e3}
+.dots{list-style:none;margin-top:14px}
+.dots li{font-size:12.5px;color:var(--ink2);padding-left:14px;position:relative;margin:4px 0}
+.dots li:before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:var(--gold2)}
+
+/* marquee phones */
+.mq{overflow:hidden;margin-top:34px;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mq-t{display:flex;gap:18px;width:max-content;animation:mq 60s linear infinite}
+.mq:hover .mq-t{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+.phone{width:168px;flex:none;border-radius:26px;padding:6px;background:#1b1e24;box-shadow:0 26px 40px -24px rgba(20,30,60,.6);transition:transform .35s}
+.phone:hover{transform:translateY(-8px) rotate(-1deg)}
+.phone img{border-radius:21px;aspect-ratio:1170/2532;object-fit:cover;width:100%}
+
+/* notion */
+.nt-g{display:grid;gap:26px;align-items:center}
+.nt-shot{position:relative;border-radius:16px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(20,30,60,.5);border:1px solid var(--line)}
+.nt-shot .ring{position:absolute;left:1.5%;top:74%;width:33%;height:25%;border:3px solid var(--gold2);border-radius:12px;box-shadow:0 0 0 999px rgba(255,255,255,.35);animation:ring 2s ease-in-out infinite}
+@keyframes ring{50%{box-shadow:0 0 0 999px rgba(255,255,255,.35),0 0 0 8px rgba(243,197,82,.4)}}
+.endow{margin-top:22px;padding:18px;border-radius:16px;background:#fff;box-shadow:var(--shadow)}
+.endow .top{display:flex;justify-content:space-between;font-size:12px;color:var(--ink2)}
+.endow .top b{color:var(--ink)}
+.segs{display:grid;grid-template-columns:repeat(32,1fr);gap:3px;margin:12px 0 8px}
+.segs i{height:8px;border-radius:3px;background:#eceff4}
+.segs i.f{background:linear-gradient(180deg,#fde69a,#f2c24c);animation:pop .6s both}
+
+/* offer */
+.of .mist i:nth-child(1){width:600px;height:420px;background:#fff4d6;left:-160px;top:10%}
+.of-g{display:grid;gap:28px}
+.of-list{display:grid;gap:12px;margin-top:24px}
+.of-i{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-radius:16px;background:#fff;box-shadow:0 14px 30px -24px rgba(38,56,110,.55)}
+.of-i b.c{flex:none;min-width:74px;font-family:"Playfair Display",Georgia,serif;font-weight:500;font-size:30px;line-height:1;color:var(--goldD)}
+.of-i strong{display:block;font-size:13.5px;font-weight:600}
+.of-i span{font-size:12.5px;color:var(--ink2)}
+.extra{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.ex-c{padding:16px;border-radius:14px;background:var(--card)}
+.ex-c b{display:block;font-family:"Playfair Display",Georgia,serif;font-size:26px;font-weight:500;line-height:1.1}
+.ex-c span{font-size:11.5px;color:var(--ink2);line-height:1.35;display:block;margin-top:4px}
+
+/* dan ad */
+.dan{padding:30px 22px;border-radius:24px;background:#fff;box-shadow:var(--shadow);position:relative}
+.dan p{font-size:15px;margin:10px 0;color:var(--ink)}
+.dan p.g{color:var(--ink2)}
+.dan .price{font-family:"Playfair Display",Georgia,serif;font-size:clamp(44px,12vw,64px);line-height:1;margin:20px 0 6px}
+.dan .price small{font-family:Montserrat;font-size:13px;color:var(--muted);letter-spacing:.04em;display:block;margin-top:8px}
+
+/* faq */
+.faq-g{display:grid;gap:28px}
+.faq details{background:var(--card);border-radius:16px;margin-bottom:12px;transition:background .3s}
+.faq details[open]{background:#fff;box-shadow:var(--shadow)}
+.faq summary{list-style:none;display:flex;gap:14px;align-items:center;justify-content:space-between;padding:20px 22px;font-size:13.5px;letter-spacing:.02em;cursor:pointer}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{flex:none;width:24px;height:24px;border-radius:50%;background:linear-gradient(180deg,#fde69a,#f2c24c);position:relative;transition:transform .3s}
+.faq summary i:before,.faq summary i:after{content:"";position:absolute;left:50%;top:50%;width:10px;height:1.6px;background:#7a5a14;transform:translate(-50%,-50%)}
+.faq summary i:after{transform:translate(-50%,-50%) rotate(90deg);transition:.3s}
+.faq details[open] summary i{transform:rotate(180deg)}
+.faq details[open] summary i:after{transform:translate(-50%,-50%) rotate(0)}
+.faq .a{padding:0 22px 20px;font-size:13px;color:var(--ink2)}
+
+/* final */
+.fin .mist i:nth-child(1){width:600px;height:480px;background:var(--lav);right:-200px;top:0}
+.fin-g{display:grid;gap:34px;align-items:center}
+.book{position:relative;height:360px;perspective:1200px;max-width:460px;margin:0 auto;width:100%}
+.book .pg{position:absolute;top:10px;width:46%;border-radius:14px;overflow:hidden;box-shadow:0 30px 50px -24px rgba(20,30,60,.55);transition:transform .6s}
+.book .pg img{width:100%}
+.book .p1{left:6%;transform:rotateY(22deg) rotateZ(-8deg)}
+.book .p2{right:6%;transform:rotateY(-22deg) rotateZ(6deg);top:34px}
+.book:hover .p1{transform:rotateY(12deg) rotateZ(-5deg) translateY(-6px)}
+.book:hover .p2{transform:rotateY(-12deg) rotateZ(4deg) translateY(-6px)}
+.form{padding:30px 22px;border-radius:22px;background:linear-gradient(180deg,#f8faff,#f0f3fa);box-shadow:var(--shadow);text-align:center}
+.form h3{font-family:"Playfair Display",Georgia,serif;font-weight:500;font-size:28px}
+.form .s{font-size:12px;color:var(--ink2);margin:6px 0 20px}
+.fake{height:54px;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:12.5px;color:var(--ink2);margin-bottom:12px;gap:8px}
+.fake b{color:var(--ink)}
+.form .legal{font-size:10px;color:var(--muted);margin-top:14px;line-height:1.5}
+
+/* contacts map */
+.ct{padding-bottom:0}
+.ct-map{position:relative;min-height:560px;margin-top:30px;border-radius:24px 24px 0 0;overflow:hidden;background:#f3f4f6}
+.ct-map svg.m{position:absolute;inset:0;width:100%;height:100%}
+.ct-card{position:relative;z-index:2;margin:24px 18px;max-width:360px;background:#fff;border-radius:18px;padding:26px 22px;box-shadow:0 30px 60px -30px rgba(20,30,60,.45)}
+.ct-card h4{font-weight:500;font-size:15px;letter-spacing:.03em;margin-bottom:14px}
+.ct-card dt{font-size:10px;color:var(--muted);letter-spacing:.04em;margin-top:12px}
+.ct-card dd{font-size:12.5px;color:var(--ink)}
+.bigpin{position:absolute;z-index:1;right:18%;top:52%;width:56px;animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-12px)}}
+
+footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
+
+/* sticky */
+.sticky{position:fixed;left:10px;right:10px;bottom:10px;z-index:60;display:flex;align-items:center;gap:12px;padding:10px 10px 10px 16px;border-radius:16px;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 20px 40px -18px rgba(20,30,60,.5);transform:translateY(140%);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.sticky.on{transform:none}
+.sticky .t{flex:1;font-size:11.5px;line-height:1.3;color:var(--ink2)}
+.sticky .t b{display:block;font-size:13px;color:var(--ink)}
+.sticky .btn{min-height:46px;padding:0 18px;font-size:10.5px;letter-spacing:.14em}
+
+.toast{position:fixed;left:50%;top:80px;transform:translate(-50%,-20px);background:#373c45;color:#fff;font-size:12.5px;padding:10px 16px;border-radius:10px;opacity:0;transition:.35s;z-index:99;pointer-events:none;max-width:90vw;text-align:center}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+
+/* ===== 3D ===== */
+.three{display:none;position:relative;height:430px;border-radius:26px}
+.three canvas{position:absolute;inset:0;display:block;cursor:grab;outline:none}
+.three.grab canvas{cursor:grabbing}
+.hero-vis.on3d .three{display:block}
+.hero-vis.on3d .map-card,.hero-vis.on3d .chip{display:none}
+.cap3d{position:absolute;z-index:3;left:50%;bottom:6px;transform:translateX(-50%);display:flex;align-items:center;gap:12px;padding:10px 16px 10px 10px;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:16px;box-shadow:0 18px 36px -18px rgba(38,56,110,.5);white-space:nowrap;min-width:230px}
+.cap3d b{display:block;font-size:14.5px;transition:opacity .3s}
+.cap3d span{display:block;font-size:11.5px;color:var(--muted);transition:opacity .3s}
+.cap3d .step3{font-family:"Playfair Display",Georgia,serif;color:var(--goldD);font-size:13px;margin-left:auto;padding-left:8px}
+.cap3d.sw b,.cap3d.sw span{opacity:0}
+.hint3d{position:absolute;z-index:3;top:8px;right:10px;font-size:10.5px;letter-spacing:.04em;color:var(--ink2);background:rgba(255,255,255,.8);padding:6px 10px;border-radius:20px;pointer-events:none;animation:hint 3s ease-in-out infinite}
+@keyframes hint{50%{transform:translateX(-6px)}}
+.dir3{height:380px}
+.dir-g.on3d .dir3{display:block}
+.dir-g.on3d .scene{display:none}
+.price-row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.coin3d{width:118px;height:118px;flex:none;position:relative;margin:6px -6px 0 0}
+.coin3d canvas{width:100%!important;height:100%!important}
+
+/* phone ring */
+.ring-wrap{position:relative;height:430px;margin-top:30px;perspective:1100px;overflow:hidden;touch-action:pan-y;cursor:grab;-webkit-user-select:none;user-select:none}
+.ring-wrap.grab{cursor:grabbing}
+.ring{position:absolute;left:50%;top:22px;transform-style:preserve-3d}
+.ring .phone{position:absolute;left:0;top:0;transition:filter .3s}
+.ring .phone img{pointer-events:none}
+.ring-floor{position:absolute;left:10%;right:10%;bottom:6px;height:40px;border-radius:50%;background:radial-gradient(closest-side,rgba(38,56,110,.18),transparent);filter:blur(4px)}
+
+/* flip cards */
+.fc-g{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:34px}
+.fc{perspective:900px;height:178px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.fc-in{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.3,1.35,.5,1)}
+.fc.flip .fc-in{transform:rotateY(180deg)}
+.fc-f,.fc-b{position:absolute;inset:0;border-radius:18px;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:16px;overflow:hidden}
+.fc-f{background:#fff;box-shadow:0 18px 36px -24px rgba(38,56,110,.55)}
+.fc-f svg{width:46px;height:46px}
+.fc-f b{font-size:15px;font-weight:600;line-height:1.25}
+.fc-f .sm{font-size:10.5px;color:var(--muted);letter-spacing:.04em}
+.fc-b{transform:rotateY(180deg);background:linear-gradient(160deg,#fde8a4,#f2c24c);color:#43361c;box-shadow:0 18px 36px -20px rgba(200,140,30,.8)}
+.fc-b b{font-family:"Playfair Display",Georgia,serif;font-size:19px;line-height:1.2;font-weight:500}
+.fc-b span{font-size:12px;opacity:.8}
+.fc-b .say{background:#fff;align-self:flex-start}
+
+/* tilt glare */
+[data-tilt]{position:relative;transform-style:preserve-3d;will-change:transform}
+[data-tilt]:after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.55),transparent 55%);opacity:0;transition:opacity .3s}
+[data-tilt].tilting:after{opacity:1}
+
+/* heading focus-in */
+.h2.rv{filter:blur(7px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1),filter .9s}
+.h2.rv.in{filter:none}
+.h1.rv{letter-spacing:.2em;transition:opacity 1s,transform 1s,letter-spacing 1.6s cubic-bezier(.2,.7,.2,1)}
+.h1.rv.in{letter-spacing:.06em}
+.mist{will-change:transform}
+
+/* ====== ≥ 760 ====== */
+@media (min-width:760px){
+  body{font-size:16px}
+  .wrap{padding:0 28px}
+  section{padding:100px 0}
+  .ticks{grid-template-columns:1fr 1fr;max-width:480px}
+  .nums{grid-template-columns:repeat(4,1fr)}
+  .tips{grid-template-columns:repeat(3,1fr)}
+  .extra{grid-template-columns:repeat(4,1fr)}
+  .tabs{justify-content:center;margin-left:0;margin-right:0}
+  .sl-g{grid-template-columns:repeat(3,1fr)}
+  .calc{padding:44px 40px}
+  .quiz-g{grid-template-columns:1.7fr 1fr}
+  .opts{grid-template-columns:1fr 1fr}
+  .hdr .mid{display:block}
+  .play{right:-6%}
+  .scene{width:100%}
+  .logo span{display:block}
+  .hdr .btn-o{margin-left:22px;height:46px;padding:0 22px}
+  .ct-card{margin:60px 0 0 60px}
+  .sticky{left:auto;right:24px;bottom:24px;width:420px}
+  .fc-g{grid-template-columns:repeat(4,1fr)}
+  .fc{height:200px}
+  .coin3d{width:140px;height:140px}
+  .ring-wrap{height:520px}
+}
+@media (min-width:960px){
+  .hero{padding:60px 0 80px}
+  .hero-g{grid-template-columns:1.05fr 1fr;align-items:center}
+  .story-g{grid-template-columns:1.1fr .9fr}
+  .ph-g{grid-template-columns:.9fr 1.1fr;align-items:start}
+  .ph-g .sticky-l{position:sticky;top:110px}
+  .dir-g{grid-template-columns:1.1fr .9fr}
+  .gr-g{display:grid;grid-template-columns:.95fr 1.05fr;gap:40px;align-items:start}
+  .qs-g{grid-template-columns:1.1fr .9fr}
+  .pl-g{grid-template-columns:1.15fr .85fr}
+  .nt-g{grid-template-columns:1.2fr .8fr}
+  .of-g{grid-template-columns:1fr 1fr;align-items:start}
+  .faq-g{grid-template-columns:.8fr 1.2fr}
+  .fin-g{grid-template-columns:1.1fr .9fr}
+  .book{height:460px}
+  .three{height:540px}
+  .dir3{height:470px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="#ffe29a"/><stop offset="1" stop-color="#e0a936"/></linearGradient>
+  <linearGradient id="gb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a6"/><stop offset="1" stop-color="#efbe45"/></linearGradient>
+  <linearGradient id="gi" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3c552"/><stop offset="1" stop-color="#c98f25"/></linearGradient>
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#eef1f6" stroke-width="1"/></pattern>
+</defs></svg>
+
+<!-- ===== HEADER ===== -->
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Alterna Türkçe">
+      <svg viewBox="0 0 38 42"><path d="M19 1 36 11v20L19 41 2 31V11z" fill="#16181c"/><path d="M12.5 29 19 12l6.5 17M15 23h8" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div><b>Alterna Türkçe</b><span>г. Анталья,<br>Akdeniz Üniversitesi</span></div>
+    </a>
+    <div class="mid"><b>A0 → C1 · $30</b><span>Один раз. Доступ навсегда</span></div>
+    <a class="btn-o" href="https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41" target="_blank" rel="noopener" data-cta="header">Получить доступ</a>
+  </div>
+  <div class="prog" id="prog"></div>
+</header>
+
+<main id="top">
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="mist"><i></i><i></i><i></i></div>
+  <div class="wrap hero-g">
+    <div>
+      <div class="eyebrow rv">Урок Alterna Türkçe · уровень A1–A2</div>
+      <h1 class="h1 rv d1">Спросить дорогу<br>по-турецки</h1>
+      <p class="sub rv d2">и понять, что вам ответили. Второе сложнее. Об этом урок</p>
+      <ul class="ticks rv d2">
+        <li>10 фраз, чтобы спросить</li>
+        <li>6 слов, чтобы понять ответ</li>
+        <li>3 суффикса вместо таблиц</li>
+        <li>Квест по карте Антальи</li>
+      </ul>
+      <a class="btn rv d3" href="#story">Начать урок</a>
+    </div>
+    <div class="hero-vis rv d2">
+      <div class="cloud" style="width:220px;height:80px;left:-40px;bottom:10px"></div>
+      <div class="map-card" id="mapCard">
+        <svg viewBox="0 0 400 420" aria-label="Карта маршрута">
+          <rect width="400" height="420" fill="url(#grid)"/>
+          <path d="M0 330 C120 300 260 360 400 320 V420 H0Z" fill="#dfeefa"/>
+          <text x="300" y="395" font-size="11" fill="#7ea2c5" font-family="Montserrat" letter-spacing="2">AKDENİZ</text>
+          <g stroke="#fff" stroke-width="16" stroke-linecap="round" fill="none">
+            <path d="M40 60 H370"/><path d="M40 160 H370"/><path d="M40 250 H370"/>
+            <path d="M80 30 V300"/><path d="M200 30 V310"/><path d="M320 30 V300"/>
+          </g>
+          <g stroke="#e3e7ee" stroke-width="1" fill="none">
+            <path d="M40 60 H370"/><path d="M40 160 H370"/><path d="M40 250 H370"/>
+            <path d="M80 30 V300"/><path d="M200 30 V310"/><path d="M320 30 V300"/>
+          </g>
+          <g fill="#e9edf4">
+            <rect x="96" y="76" width="88" height="66" rx="8"/><rect x="216" y="76" width="88" height="66" rx="8"/>
+            <rect x="96" y="176" width="88" height="58" rx="8"/><rect x="216" y="176" width="88" height="58" rx="8"/>
+            <rect x="336" y="76" width="40" height="66" rx="8"/><rect x="336" y="176" width="40" height="58" rx="8"/>
+            <rect x="30" y="76" width="34" height="66" rx="8"/><rect x="30" y="176" width="34" height="58" rx="8"/>
+          </g>
+          <rect x="216" y="176" width="88" height="58" rx="8" fill="#f7f0dc"/>
+          <text x="226" y="198" font-size="10" fill="#8e949e" font-family="Montserrat">Eczane</text>
+          <text x="106" y="98" font-size="10" fill="#8e949e" font-family="Montserrat">Saat Kulesi</text>
+          <text x="226" y="98" font-size="10" fill="#8e949e" font-family="Montserrat">Kaleiçi</text>
+          <text x="106" y="198" font-size="10" fill="#8e949e" font-family="Montserrat">Otogar</text>
+          <circle cx="200" cy="160" r="6" fill="#fff" stroke="#f2c24c" stroke-width="2"/>
+          <path class="route" pathLength="1" d="M200 300 V160 H80 V60 H250"/>
+          <circle cx="200" cy="300" r="8" fill="#fff" stroke="#373c45" stroke-width="3"/>
+          <g class="pin"><path d="M250 58c-12 0-20-9-20-20s9-20 20-20 20 9 20 20c0 13-20 36-20 36" fill="url(#gb)" stroke="#d49a2a" stroke-width="1.5"/><circle cx="250" cy="37" r="7" fill="#fff"/></g>
+        </svg>
+      </div>
+      <div class="three" id="hero3d">
+        <div class="hint3d">↻ потяните, чтобы повернуть</div>
+        <div class="cap3d" id="cap3d"><button class="say" id="capSay" data-say="Düz gidin" aria-label="Озвучить"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9zM16 8a5 5 0 0 1 0 8M18.5 5.5a9 9 0 0 1 0 13" stroke="#5b4413" stroke-width="2" fill="none"/></svg></button><div><b id="capTr">Düz gidin</b><span id="capRu">Идите прямо</span></div><div class="step3" id="capN">1/5</div></div>
+      </div>
+      <div class="chip c1">Düz gidin <small>идите прямо</small></div>
+      <div class="chip c2">Işıklardan sola <small>на светофоре налево</small></div>
+      <div class="chip c3">Kaleiçi sağda <small>Калеичи справа</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STORY (Dan style) ===== -->
+<section class="story" id="story">
+  <div class="mist"><i></i></div>
+  <div class="wrap story-g">
+    <div>
+      <div class="eyebrow rv">История, с которой всё началось</div>
+      <h2 class="h2 rv">Я спросил дорогу.<br><span class="gold">Мне ответили</span></h2>
+      <p class="rv">Я приехал в Анталью учиться. Первая неделя. Турецкая симка ещё не работает. Интернета нет.</p>
+      <p class="rv">Мне нужно было на автовокзал. Otogar. Фразу я выучил заранее. <b>Otogar nerede?</b></p>
+      <p class="rv">Подхожу к дедушке у магазина. Говорю, affedersiniz, otogar nerede? Дедушка улыбается. Говорит. Быстро. Секунд двенадцать. Руками показывает.</p>
+      <p class="rv">Я киваю. Говорю, teşekkürler. Иду прямо.</p>
+      <p class="rv">Потому что из всего, что он сказал, я понял одно слово. <b>Düz.</b></p>
+      <p class="rv">Через сорок минут я был у моря. Красиво. Но это не otogar.</p>
+      <p class="rv">Спросить дорогу — половина дела. Вторая половина — понять ответ. Сегодня разберём обе.</p>
+      <p class="rv small" style="margin-top:18px">Дедушку я потом встретил ещё раз. Он спросил, нашёл ли я otogar. Я сказал, evet. Соврал.</p>
+      <div class="author rv">
+        <div class="ava">ТА</div>
+        <div><b>Тимур Ахметов</b><span>Автор Alterna · студент Akdeniz Üniversitesi, Анталья<br>TÖMER C1 · IELTS 7.5 · технический переводчик RU→TR</span></div>
+      </div>
+    </div>
+    <div class="card chat rv d2" id="chat">
+      <div class="top"><div class="ava">TA</div><div><b>Анталья, 1-я неделя</b><span>реконструкция диалога</span></div></div>
+      <div class="typing" id="typing"><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NUMBERS ===== -->
+<section style="padding-top:20px">
+  <div class="wrap center">
+    <h2 class="h2 rv">Урок в цифрах</h2>
+    <div class="nums">
+      <div class="num rv"><b data-count="10">0</b><span>фраз, чтобы<br>спросить дорогу</span></div>
+      <div class="num rv d1"><b data-count="6">0</b><span>слов, из которых<br>состоит любой ответ</span></div>
+      <div class="num rv d2"><b data-count="3">0</b><span>суффикса:<br>куда, где, откуда</span></div>
+      <div class="num rv d3"><b data-count="4">0</b><span>маршрута<br>в квесте по карте</span></div>
+    </div>
+    <a class="btn rv" href="#ask">Перейти к фразам</a>
+  </div>
+</section>
+
+<!-- ===== PHRASES: ASK ===== -->
+<section class="ph" id="ask">
+  <div class="mist"><i></i></div>
+  <div class="wrap ph-g">
+    <div class="sticky-l">
+      <div class="eyebrow rv">Шаг 1 · спросить</div>
+      <h2 class="h2 rv">Как <span class="gold">спросить дорогу</span></h2>
+      <p class="lead rv">Спросить — легко. Нужны одно слово и один вопрос.</p>
+      <p class="lead rv">Affedersiniz. Это «извините». Им вы останавливаете человека. Дальше — место и nerede. Otogar nerede? Всё. Вы спросили.</p>
+      <p class="lead rv">Теперь начинается сложное. Вам отвечают.</p>
+      <div class="note rv"><b>Совет из TÖMER.</b> Заучите последние три фразы в списке раньше первых. Они спасают, когда ответ оказался длиннее, чем вы рассчитывали.</div>
+    </div>
+    <div class="ph-list" id="askList"></div>
+  </div>
+</section>
+
+<!-- ===== DIRECTIONS TABS ===== -->
+<section class="dir" id="dir">
+  <div class="mist"><i></i></div>
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow rv" style="justify-content:center">Шаг 2 · понять ответ</div>
+      <h2 class="h2 rv">Варианты <span class="gold">маршрутных решений</span></h2>
+      <p class="lead rv">Турок отвечает быстро. Руками. Не останавливаясь. Хорошая новость: слов у него немного. Шесть. Выучите их, и дедушка у магазина больше не будет загадкой.</p>
+    </div>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div class="dir-g">
+      <div class="rv"><div class="scene">
+        <svg viewBox="0 0 300 300" id="scene">
+          <rect width="300" height="300" rx="18" fill="#f4f6fa"/>
+          <g fill="#dfe3ea">
+            <rect x="137" y="0" width="26" height="300"/>
+            <rect x="0" y="189" width="300" height="22"/>
+            <rect x="0" y="89" width="300" height="22"/>
+          </g>
+          <g stroke="#fff" stroke-width="2" stroke-dasharray="8 8"><path d="M150 0V300"/><path d="M0 200H300M0 100H300"/></g>
+          <g id="blds">
+            <rect class="bld" id="b-lb" x="18" y="226" width="104" height="58" rx="8" fill="#e6eaf1"/>
+            <rect class="bld" id="b-rb" x="178" y="226" width="104" height="58" rx="8" fill="#e9e6f4"/>
+            <rect class="bld" id="b-lm" x="18" y="124" width="104" height="52" rx="8" fill="#e7f0ea"/>
+            <rect class="bld" id="b-rm" x="178" y="124" width="104" height="52" rx="8" fill="#e6eaf1"/>
+            <rect class="bld" id="b-lt" x="18" y="16" width="104" height="60" rx="8" fill="#e9e6f4"/>
+            <rect class="bld" id="b-rt" x="178" y="16" width="104" height="60" rx="8" fill="#e7f0ea"/>
+          </g>
+          <g id="lbls">
+            <text class="lbl" id="l-0" x="190" y="50">Otogar</text>
+            <text class="lbl" id="l-1" x="190" y="260">Market</text>
+            <text class="lbl" id="l-2" x="30" y="260">Eczane</text>
+            <text class="lbl" id="l-3" x="30" y="155">Cami</text>
+            <text class="lbl" id="l-4" x="190" y="155">Banka</text>
+            <text class="lbl" id="l-5" x="190" y="260">Otel</text>
+          </g>
+          <path class="dpath" id="dpath" pathLength="1" d=""/>
+          <circle class="walker" id="walker" cx="150" cy="272" r="9"/>
+        </svg>
+      </div><div class="three dir3" id="dir3d"><div class="hint3d">↻ потяните, чтобы повернуть</div></div></div>
+      <div class="dir-info" id="dirInfo"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GRAMMAR ===== -->
+<section class="gr" id="gr">
+  <div class="mist"><i></i></div>
+  <div class="wrap gr-g">
+    <div class="gr-txt">
+      <div class="eyebrow rv">Шаг 3 · механика</div>
+      <h2 class="h2 rv">Три суффикса.<br><span class="gold">Куда, где, откуда</span></h2>
+      <p class="rv">В русском мы говорим «на светофоре направо». Турок говорит «<b>от</b> светофора направо». Işıklardan sağa.</p>
+      <p class="rv">Звучит странно. Работает всегда.</p>
+      <p class="rv">Весь маршрут держится на трёх окончаниях. Буква а или е выбирается по последней гласной слова. a, ı, o, u — берём a. e, i, ö, ü — берём e. Больше правил тут нет.</p>
+      <div class="cases">
+        <div class="case rv"><div class="sfx">-a / -e</div><div><b>Куда? — дательный</b><span>Otogar<u>a</u> nasıl gidebilirim? — Как дойти до автовокзала? Sağ<u>a</u> dönün — поверните направо.</span></div></div>
+        <div class="case rv d1"><div class="sfx">-da / -de</div><div><b>Где? — местный</b><span>Eczane köşe<u>de</u> — аптека на углу. Sağ<u>da</u> — справа.</span></div></div>
+        <div class="case rv d2"><div class="sfx">-dan / -den</div><div><b>Откуда / через что? — исходный</b><span>Işıklar<u>dan</u> sola — на светофоре налево. İlk sağ<u>dan</u> — с первого поворота направо.</span></div></div>
+      </div>
+    </div>
+    <div class="card builder rv d1" id="builder">
+      <h3>Конструктор: соберите <span class="gold">маршрут</span></h3>
+      <div class="lbl2">1 · Место</div>
+      <div class="pills" id="words"></div>
+      <div class="lbl2">2 · Что хотим сказать</div>
+      <div class="pills" id="cs"></div>
+      <div class="morph" id="morph"></div>
+      <div class="why" id="why"></div>
+      <div class="ex" id="ex"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUEST ===== -->
+<section class="qs" id="quest">
+  <div class="mist"><i></i></div>
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow rv" style="justify-content:center">Шаг 4 · квест</div>
+      <h2 class="h2 rv">Дойдите до цели <span class="gold">без навигатора</span></h2>
+      <p class="lead rv">Вам объясняют дорогу по-турецки. Вы стоите у белого кружка, лицом вверх. Нажмите на пин, где окажетесь.</p>
+    </div>
+    <div class="qs-g" style="margin-top:34px">
+      <div class="card qmap rv">
+        <svg viewBox="0 0 360 400" id="qsvg">
+          <rect width="360" height="400" fill="#f6f7fa"/>
+          <g fill="#e9ecf2">
+            <rect x="0" y="0" width="46" height="46" rx="6"/><rect x="74" y="0" width="92" height="46" rx="6"/><rect x="194" y="0" width="92" height="46" rx="6"/><rect x="314" y="0" width="46" height="46" rx="6"/>
+            <rect x="0" y="74" width="46" height="92" rx="6"/><rect x="74" y="74" width="92" height="92" rx="6"/><rect x="194" y="74" width="92" height="92" rx="6"/><rect x="314" y="74" width="46" height="92" rx="6"/>
+            <rect x="0" y="194" width="46" height="92" rx="6"/><rect x="74" y="194" width="92" height="92" rx="6"/><rect x="194" y="194" width="92" height="92" rx="6"/><rect x="314" y="194" width="46" height="92" rx="6"/>
+            <rect x="0" y="314" width="166" height="26" rx="6"/><rect x="194" y="314" width="166" height="26" rx="6"/>
+          </g>
+          <g fill="#dde1e8">
+            <rect x="46" y="0" width="28" height="340"/><rect x="166" y="0" width="28" height="400"/><rect x="286" y="0" width="28" height="340"/>
+            <rect x="0" y="46" width="360" height="28"/><rect x="0" y="166" width="360" height="28"/><rect x="0" y="286" width="360" height="28"/>
+          </g>
+          <rect x="0" y="342" width="360" height="22" fill="#cfe4f7"/>
+          <rect x="162" y="338" width="36" height="30" rx="4" fill="#c7ccd6"/>
+          <text x="204" y="358" font-size="9" fill="#6f8fb3" font-family="Montserrat">köprü</text>
+          <rect x="0" y="366" width="360" height="34" fill="#f8ecd0"/>
+          <text x="14" y="387" font-size="9" fill="#b89455" font-family="Montserrat" letter-spacing="1.5">PLAJ · AKDENİZ</text>
+          <g transform="translate(196 150)"><rect width="10" height="22" rx="3" fill="#373c45"/><circle cx="5" cy="5" r="2.5" fill="#f18a7a"/><circle cx="5" cy="11" r="2.5" fill="#f2c24c"/><circle cx="5" cy="17" r="2.5" fill="#7fcf8e"/></g>
+          <text x="210" y="160" font-size="8.5" fill="#8e949e" font-family="Montserrat">ışıklar</text>
+          <path id="qpath" d="" fill="none" stroke="#e0a936" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
+          <g id="qpins"></g>
+          <g id="qstart"><circle r="10" fill="#fff" stroke="#373c45" stroke-width="3"/><path d="M0 -20 L6 -12 H-6Z" fill="#373c45"/></g>
+          <circle id="qwalker" r="7" fill="#373c45" opacity="0"/>
+        </svg>
+      </div>
+      <div class="card qcard rv d1">
+        <div class="step" id="qstep">Маршрут 1 из 4</div>
+        <div class="bar"><i id="qbar"></i></div>
+        <div class="row" style="margin:0 0 10px"><button class="say" id="qsay" aria-label="Озвучить"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9zM16 8a5 5 0 0 1 0 8M18.5 5.5a9 9 0 0 1 0 13" stroke="#5b4413" stroke-width="2" fill="none"/></svg></button><span class="small">Сначала послушайте, потом читайте</span></div>
+        <div class="qinstr" id="qinstr"></div>
+        <div class="qfb" id="qfb">Выберите пин A, B или C на карте.</div>
+        <div class="row"><button class="btn" id="qnext" style="display:none">Следующий маршрут</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DIALOGUE ===== -->
+<section id="dialog" style="background:linear-gradient(180deg,#fff,#f8f9fc 50%,#fff)">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow rv" style="justify-content:center">Шаг 5 · целиком</div>
+      <h2 class="h2 rv">Полный диалог. <span class="gold">Kaleiçi</span></h2>
+      <p class="lead rv">Старый город Антальи. Туристы теряются там каждый день. Вы — нет.</p>
+    </div>
+    <div class="dlg-list" id="dlg"></div>
+    <div class="dlg-ctl">
+      <button class="btn" id="playAll">Слушать весь диалог</button>
+      <button class="toggle" id="ruToggle">Скрыть перевод</button>
+    </div>
+    <p class="lead center rv" style="margin-top:26px">Посмотрите на третью реплику. İkinci ışıklardan sola, değil mi? Переспросить не стыдно. Это тоже навык.</p>
+  </div>
+</section>
+
+<!-- ===== TIPS ===== -->
+<section id="tips">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow rv" style="justify-content:center">Два года в Анталье</div>
+      <h2 class="h2 rv">Чего нет <span class="gold">в учебнике</span></h2>
+    </div>
+    <div class="tips">
+      <div class="tip rv" data-tilt><div class="n">01</div><b>Спрашивайте двоих</b><p>Bilmiyorum я слышал редко. Чаще мне показывали дорогу. Иногда правильную. Если двое показали в одну сторону, идите.</p></div>
+      <div class="tip rv d1" data-tilt><div class="n">02</div><b>Beş dakika — это расстояние</b><p>Пять минут по-турецки означают «недалеко». Иногда это пятнадцать. Спросите yürüyerek kaç dakika? и прибавьте запас.</p></div>
+      <div class="tip rv d2" data-tilt><div class="n">03</div><b>Смотрите на руку</b><p>Şurada — «вон там», и дальше жест. Слово вам ничего не скажет, рука скажет. Слушайте düz, sağ, sol, а направление берите у жеста.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FLIP CARDS ===== -->
+<section id="cards" style="padding-top:30px">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow rv" style="justify-content:center">Шпаргалка</div>
+      <h2 class="h2 rv">Восемь карточек. <span class="gold">Переверните</span></h2>
+      <p class="lead rv">Сначала вспомните перевод сами. Потом переверните. Так слово держится дольше.</p>
+    </div>
+    <div class="fc-g" id="fcg"><div class="fc rv" data-tilt-off><div class="fc-in"><div class="fc-f"><svg viewBox="0 0 48 48" fill="none" stroke="url(#gi)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40V10M12 22 24 10l12 12"/></svg><div><b>Düz gidin</b><div class="sm">нажмите →</div></div></div><div class="fc-b"><button class="say" data-say="Düz gidin" aria-label="Озвучить"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9zM16 8a5 5 0 0 1 0 8M18.5 5.5a9 9 0 0 1 0 13" stroke="#5b4413" stroke-width="2" fill="none"/></svg></button><div><b>Идите прямо</b><br><span>дюз гидин</span></div></div></div></div><div class="fc rv d1" data-tilt-off><div class="fc-in"><div class="fc-f"><svg viewBox="0 0 48 48" fill="none" stroke="url(#gi)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 38V22h24M26 14l8 8-8 8"/></svg><div><b>Sağa dönün</b><div class="sm">нажмите →</div></div></div><div class="fc-b"><button class="say" data-say="Sağa dönün" aria-label="Озвучить"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9zM16 8a5 5 0 0 1 0 8M18.5 5.5a9 9 0 0 1 0 13" stroke="#5b4413" stroke-width="2" fill="none"/></svg></button><div><b>Поверните направо</b><br><span>саа дёнюн</span></div></div></div></div><div class="fc rv d2" data-tilt-off><div class="fc-in"><div class="fc-f"><svg viewBox="0 0 48 48" fill="none" stroke="url(#gi)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M38 38V22H14M22 14l-8 8 8 8"/></svg><div><b>Sola dönün</b><div class="sm">нажмите →</div></div></div><div class="fc-b"><button class="say" data-say="Sola dönün" aria-label="Озвучить"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9zM16 8a5 5 0 0 1 0 8M18.5 5.5a9 9 0 0 1 0 13" stroke="#5b4413" stroke-width="2" fill="none"/></svg></button><div><b>Поверните налево</b><br><span>сола дёнюн</span></div></div></div></div><div class="fc rv d3" data-tilt-off><div class="fc-in"><div class="fc-f"><svg viewBox="0 0 48 48" fill="none" stroke="url(#gi)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 40V18a8 8 0 0 1 16 0v4M24 16l8 8 8-8" transform="translate(-4 0)"/></svg><div><b>Geri dönün</b><div class="sm">нажмите →</div></div></div><div class="fc-b"><button class="say" data-say="Geri dönün" aria-label="Озвучить"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9zM16 8a5 5 0 0 1 0 8M18.5 5.5a9 9 0 0 1 0 13" stroke="#5b4413" stroke-width="2" fill="none"/></svg></button><div><b>Вернитесь назад</b><br><span>гэри дёнюн</span></div></div></div></div><div class="fc rv" data-tilt-off><div class="fc-in"><div class="fc-f"><svg viewBox="0 0 48 48" fill="none" stroke="url(#gi)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30h36M6 18h36" stroke-dasharray="4 4"/><path d="M24 40V8M18 14l6-6 6 6"/></svg><div><b>Karşıda</b><div class="sm">нажмите →</div></div></div><div class="fc-b"><button class="say" data-say="Karşıda" aria-label="Озвучить"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9zM16 8a5 5 0 0 1 0 8M18.5 5.5a9 9 0 0 1 0 13" stroke="#5b4413" stroke-width="2" fill="none"/></svg></button><div><b>Напротив, через дорогу</b><br><span>каршыда</span></div></div></div></div><div class="fc rv d1" data-tilt-off><div class="fc-in"><div class="fc-f"><svg viewBox="0 0 48 48" fill="none" stroke="url(#gi)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 40V14h26"/><circle cx="12" cy="14" r="4"/></svg><div><b>Köşede</b><div class="sm">нажмите →</div></div></div><div class="fc-b"><button class="say" data-say="Köşede" aria-label="Озвучить"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9zM16 8a5 5 0 0 1 0 8M18.5 5.5a9 9 0 0 1 0 13" stroke="#5b4413" stroke-width="2" fill="none"/></svg></button><div><b>На углу</b><br><span>кёшэдэ</span></div></div></div></div><div class="fc rv d2" data-tilt-off><div class="fc-in"><div class="fc-f"><svg viewBox="0 0 48 48" fill="none" stroke="url(#gi)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 40V14h20M30 6l8 8-8 8"/><text x="4" y="30" font-size="12" stroke="none" fill="#c9922a" font-family="Montserrat" font-weight="700">1</text></svg><div><b>İlk sağdan</b><div class="sm">нажмите →</div></div></div><div class="fc-b"><button class="say" data-say="İlk sağdan" aria-label="Озвучить"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9zM16 8a5 5 0 0 1 0 8M18.5 5.5a9 9 0 0 1 0 13" stroke="#5b4413" stroke-width="2" fill="none"/></svg></button><div><b>Первый поворот направо</b><br><span>ильк саадан</span></div></div></div></div><div class="fc rv d3" data-tilt-off><div class="fc-in"><div class="fc-f"><svg viewBox="0 0 48 48" fill="none" stroke="url(#gi)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40V14M16 22l8-8 8 8M16 8h16"/></svg><div><b>Biraz ileride</b><div class="sm">нажмите →</div></div></div><div class="fc-b"><button class="say" data-say="Biraz ileride" aria-label="Озвучить"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9zM16 8a5 5 0 0 1 0 8M18.5 5.5a9 9 0 0 1 0 13" stroke="#5b4413" stroke-width="2" fill="none"/></svg></button><div><b>Чуть дальше впереди</b><br><span>бираз илэридэ</span></div></div></div></div></div>
+  </div>
+</section>
+
+<!-- ===== QUIZ ===== -->
+<section id="quiz" style="padding-top:30px">
+  <div class="wrap">
+    <div class="center">
+      <h2 class="h2 rv">Проверьте, <span class="gold">дойдёте ли вы</span></h2>
+      <p class="lead rv">Ответьте на 5 вопросов. Узнаете, отпускать ли вас в Анталью без интернета.</p>
+    </div>
+    <div class="quiz-g">
+      <div class="card quiz rv" id="quizBox"></div>
+      <div class="yel rv d1" data-tilt>
+        <p>ПРОЙДИТЕ ТЕСТ<br>ИЗ 5 ВОПРОСОВ<br>И УЗНАЙТЕ СВОЙ<br>УРОВЕНЬ «ДОРОГИ»</p>
+        <img src="media/ph1962.webp" alt="Экран платформы Alterna: маршрут A1" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CALCULATOR (loss aversion) ===== -->
+<section id="calc" style="padding-top:30px">
+  <div class="wrap">
+    <div class="calc rv">
+      <div class="center">
+        <h2 class="h2" style="font-size:clamp(22px,5.6vw,32px)">Посчитайте, сколько отпуска<br>уходит <span class="gold">на «я не понял»</span></h2>
+        <p class="small" style="margin-top:8px">Двигайте ползунки. Цифры ваши, не наши.</p>
+      </div>
+      <div class="sl-g">
+        <div class="sl"><label for="s1">Дней в Турции</label><output id="o1">10</output><input id="s1" type="range" min="3" max="60" value="10"></div>
+        <div class="sl"><label for="s2">Раз в день вы не поняли ответ</label><output id="o2">2</output><input id="s2" type="range" min="1" max="6" value="2"></div>
+        <div class="sl"><label for="s3">Минут уходит на то, чтобы найти дорогу иначе</label><output id="o3">15 мин</output><input id="s3" type="range" min="5" max="45" step="5" value="15"></div>
+      </div>
+      <div class="calc-out">
+        <div class="big" id="cOut">5 ч</div>
+        <p id="cTxt"></p>
+        <a class="btn" href="#platform">Как это исправить</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PLATFORM: VIDEO ===== -->
+<section class="pl" id="platform">
+  <div class="mist"><i></i><i></i></div>
+  <div class="wrap pl-g">
+    <div class="rv" style="position:relative">
+      <div class="laptop" id="laptop">
+        <div class="lscreen"><video id="vid" muted playsinline loop preload="none" poster="media/grammar.jpg"><source src="media/grammar.mp4" type="video/mp4"></video></div>
+        <div class="lbase"></div>
+        <button class="play" id="playBtn" aria-label="Смотреть"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></button>
+      </div>
+    </div>
+    <div>
+      <div class="eyebrow rv">Это была одна страница</div>
+      <h2 class="h2 rv">Посмотрите платформу<br><span class="gold">изнутри</span></h2>
+      <p class="lead rv">Урок про дорогу — один гайд. В Alterna их 128. Плюс мультфильмы, подкасты, приложения, книги. Разложено по уровням. Смотрите сами, это запись экрана, без монтажа.</p>
+      <div class="vtabs rv" id="vtabs"></div>
+      <ul class="dots rv" id="vdesc"></ul>
+    </div>
+  </div>
+  <div class="wrap center" style="margin-top:70px">
+    <h2 class="h2 rv">С телефона — <span class="gold">прямо сейчас</span></h2>
+    <p class="lead rv">Реальные экраны. Открываются в браузере, ничего не надо устанавливать.</p>
+  </div>
+  <div class="ring-wrap rv" id="ringWrap"><div class="ring" id="ring"></div><div class="ring-floor"></div></div>
+  <p class="small center" style="margin-top:6px">↔ крутите карусель пальцем</p>
+</section>
+
+<!-- ===== NOTION / ENDOWED PROGRESS ===== -->
+<section id="notion">
+  <div class="wrap nt-g">
+    <div class="rv">
+      <div class="nt-shot"><img src="media/nt165711.webp" alt="Лексика Alterna в Notion: блок «Узнать дорогу»" loading="lazy"><div class="ring"></div></div>
+    </div>
+    <div>
+      <div class="eyebrow rv">Вы уже начали</div>
+      <h2 class="h2 rv">Этот урок уже лежит<br><span class="gold">в платформе</span></h2>
+      <p class="lead rv">Видите блок «Узнать дорогу»? Это он. Рядом «Транспорт», «Отпуск», «Деньги», «Больница». Следующий шаг после дороги — dolmuş и билет. Он там же.</p>
+      <div class="endow rv">
+        <div class="top"><span>Ваш прогресс по грамматике Alterna</span><b id="endowTxt">1 / 128</b></div>
+        <div class="segs" id="segs"></div>
+        <div class="small">Первый гайд вы прошли на этой странице. Осталось 127. И они уже написаны.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OFFER ===== -->
+<section class="of" id="offer">
+  <div class="mist"><i></i></div>
+  <div class="wrap of-g">
+    <div>
+      <div class="eyebrow rv">🔥 Alterna Timur A0 → C1</div>
+      <h2 class="h2 rv">Весь турецкий <span class="gold">от A0 до C1</span><br>в одном месте</h2>
+      <div class="of-list">
+        <div class="of-i rv" data-tilt><b class="c" data-count="128">0</b><div><strong>гайдов по грамматике</strong><span>Разбираю, как здесь. Без «откройте страницу 42».</span></div></div>
+        <div class="of-i rv" data-tilt><b class="c" data-count="131">0</b><div><strong>блок лексики по темам</strong><span>Не список слов, а то, что реально говорят. «Узнать дорогу» — один из них.</span></div></div>
+        <div class="of-i rv" data-tilt><b class="c" data-count="109">0</b><div><strong>интерактивных ресурсов</strong><span>Слова, тексты, диалоги, аудирование, игры на запоминание.</span></div></div>
+        <div class="of-i rv" data-tilt><b class="c" data-count="32">0</b><div><strong>блока по экзаменам</strong><span>A1, A2, B1, B2, C1 — по каждому отдельно.</span></div></div>
+        <div class="of-i rv" data-tilt><b class="c" data-count="36">0</b><div><strong>гайдов по работе</strong><span>Для тех, кто ищет или уже пашет.</span></div></div>
+        <div class="of-i rv" data-tilt><b class="c" data-count="1716">0</b><div><strong>материалов по уровням</strong><span>Фильмы, книги, мультики, подкасты, приложения, ютуб. Открываете свой уровень и берёте.</span></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="dan rv">
+        <p>У меня был TÖMER. Год турецкого. Каждый день.</p>
+        <p class="g">Я знаю, где турецкий ломается. На падежах. На гармонии гласных. На дедушке, который объясняет дорогу за двенадцать секунд.</p>
+        <p>Я собрал в одно место всё, что было нужно мне тогда.</p>
+        <p class="g">Проверил вручную. Разложил по уровням. Мультики с медленной речью для A1. Подкасты до C1. Приложения — связкой, а не зоопарком.</p>
+        <p>Всё уже собрано. Искать не надо.</p>
+        <div class="price-row"><div class="price">$30<small>Один раз. Доступ навсегда. Не подписка.</small></div><div class="coin3d" id="coin3d" aria-hidden="true"></div></div>
+        <p class="g" style="font-size:13px">1716 материалов за $30 — это меньше двух центов за материал.</p>
+        <a class="btn block" style="margin-top:16px" href="https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41" target="_blank" rel="noopener" data-cta="offer">Приобрести доступ</a>
+      </div>
+      <div class="extra">
+        <div class="ex-c rv" data-tilt><b data-count="138">0</b><span>мультфильмов с уровнями A1–B2</span></div>
+        <div class="ex-c rv d1" data-tilt><b data-count="143">0</b><span>приложения и сервиса, из них 72 бесплатно</span></div>
+        <div class="ex-c rv d2" data-tilt><b data-count="28">0</b><span>YouTube-каналов, проверены вручную</span></div>
+        <div class="ex-c rv d3" data-tilt><b>60–90</b><span>часов до A1 по дорожной карте</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" style="padding-top:30px">
+  <div class="wrap faq-g">
+    <div>
+      <h2 class="h2 rv">Ответы на <span class="gold">частые вопросы</span></h2>
+      <div class="author rv">
+        <div class="ava">ТА</div>
+        <div><b>Тимур Ахметов,</b><span>автор Alterna Türkçe</span></div>
+      </div>
+      <p class="lead rv">Остались вопросы? Лучший ответ — открыть платформу и посмотреть свой уровень.</p>
+      <a class="btn rv" style="margin-top:22px" href="https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41" target="_blank" rel="noopener" data-cta="faq">Получить доступ</a>
+    </div>
+    <div class="faq rv">
+      <details open><summary>Я совсем с нуля. Мне подойдёт?<i></i></summary><div class="a">Да. Уровень A0 — это алфавит, 29 букв и шесть незнакомых звуков. Дальше по лестнице: A1, A2, B1, B2, C1. Открываете свой уровень и идёте по порядку.</div></details>
+      <details><summary>Это курс с преподавателем?<i></i></summary><div class="a">Нет. Это система: гайды, лексика, тренажёры и подборки материалов по уровням. Учитесь в своём темпе. Без расписания и без домашки, которую надо сдавать.</div></details>
+      <details><summary>Платить нужно каждый месяц?<i></i></summary><div class="a">Нет. $30 один раз. Доступ навсегда.</div></details>
+      <details><summary>У меня уже есть Duolingo. Зачем ещё?<i></i></summary><div class="a">Duolingo — одно приложение. В Alterna 143 сервиса разобраны по уровням и задачам: что для слов, что для речи, что для грамматики. Плюс 128 гайдов, которых в приложениях нет.</div></details>
+      <details><summary>Как я получу доступ?<i></i></summary><div class="a">Кнопка ведёт на страницу оплаты lava.top. После оплаты вы получаете доступ к платформе.</div></details>
+      <details><summary>Есть ли там продолжение этого урока?<i></i></summary><div class="a">Да. Блок лексики «Узнать дорогу», затем «Транспорт», «Отпуск», «Гостиница». И гайды по падежам — дательному, местному и исходному, которые вы сегодня видели в работе.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="fin" id="final">
+  <div class="mist"><i></i></div>
+  <div class="wrap">
+    <h2 class="h2 rv" style="max-width:640px">Получите доступ к платформе <span class="gold">и не теряйтесь</span> больше</h2>
+    <div class="fin-g" style="margin-top:20px">
+      <div class="book rv">
+        <div class="pg p1"><img src="media/ph1961.webp" alt="Экран: маршрут от нуля до свободного турецкого" loading="lazy"></div>
+        <div class="pg p2"><img src="media/ph1916.webp" alt="Экран: YouTube-каталог по уровням" loading="lazy"></div>
+      </div>
+      <div class="form rv d1" data-tilt>
+        <h3>Alterna A0 → C1</h3>
+        <p class="s">Грамматика, лексика, тренажёры и 1716 материалов по уровням</p>
+        <div class="fake">Цена: <b>$30</b></div>
+        <div class="fake">Срок доступа: <b>навсегда</b></div>
+        <a class="btn block" href="https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41" target="_blank" rel="noopener" data-cta="final">Приобрести доступ</a>
+        <p class="legal">Кнопка откроет защищённую страницу оплаты lava.top</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT MAP ===== -->
+<section class="ct">
+  <div class="wrap center">
+    <h2 class="h2 rv">Приглашаем вас на экскурсию<br>по <span class="gold">турецкому языку</span></h2>
+  </div>
+  <div class="wrap">
+    <div class="ct-map rv">
+      <svg class="m" viewBox="0 0 1000 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <rect width="1000" height="560" fill="#f3f4f6"/>
+        <path d="M0 470 C200 430 380 500 560 460 S860 420 1000 450 V560 H0Z" fill="#e1edf8"/>
+        <g stroke="#fff" stroke-width="14" fill="none" stroke-linecap="round">
+          <path d="M0 120 H1000"/><path d="M0 260 C300 240 600 280 1000 250"/><path d="M0 380 H1000"/>
+          <path d="M160 0 V460"/><path d="M420 0 C430 200 400 300 430 460"/><path d="M700 0 V440"/><path d="M880 0 V440"/>
+        </g>
+        <g fill="#e8eaee">
+          <rect x="190" y="140" width="200" height="90" rx="10"/><rect x="460" y="140" width="210" height="90" rx="10"/><rect x="730" y="140" width="120" height="80" rx="10"/>
+          <rect x="190" y="290" width="200" height="70" rx="10"/><rect x="460" y="290" width="210" height="70" rx="10"/><rect x="730" y="280" width="120" height="80" rx="10"/>
+          <rect x="190" y="20" width="200" height="80" rx="10"/><rect x="460" y="20" width="210" height="80" rx="10"/><rect x="730" y="20" width="120" height="80" rx="10"/>
+        </g>
+        <g font-family="Montserrat" font-size="13" fill="#9aa0aa">
+          <text x="480" y="190">Akdeniz Üniversitesi</text><text x="210" y="330">Kaleiçi</text><text x="740" y="320">Konyaaltı</text><text x="210" y="60">Otogar</text><text x="740" y="60">Saat Kulesi</text>
+          <text x="620" y="520" letter-spacing="4" fill="#8fb0cf">AKDENİZ</text>
+        </g>
+      </svg>
+      <svg class="bigpin" viewBox="0 0 56 76"><defs><linearGradient id="gp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe29a"/><stop offset="1" stop-color="#e0a936"/></linearGradient></defs><path d="M28 74S4 44 4 27a24 24 0 0 1 48 0c0 17-24 47-24 47z" fill="url(#gp)" stroke="#c98f25" stroke-width="1.5"/><circle cx="28" cy="27" r="9" fill="#fff"/></svg>
+      <div class="ct-card">
+        <h4>Контактная информация</h4>
+        <dl>
+          <dt>Автор</dt><dd>Тимур Ахметов<br>Akdeniz Üniversitesi, Анталья</dd>
+          <dt>Уровни</dt><dd>A0 · A1 · A2 · B1 · B2 · C1</dd>
+          <dt>Стоимость</dt><dd>$30, один раз</dd>
+          <dt>Доступ</dt><dd>навсегда, 24/7<br>с телефона и компьютера</dd>
+        </dl>
+        <a class="btn block" style="margin-top:20px;min-height:52px" href="https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41" target="_blank" rel="noopener" data-cta="map">Записаться в Alterna</a>
+        <a class="link-s" href="#ask">Повторить урок</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>Alterna Türkçe · Тимур Ахметов · урок «Yol tarifi» · 2026</footer>
+
+<div class="sticky" id="sticky">
+  <div class="t"><b>Alterna A0 → C1 · $30</b>128 гайдов · 1716 материалов · навсегда</div>
+  <a class="btn" href="https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41" target="_blank" rel="noopener" data-cta="sticky">Доступ</a>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const SPK='<svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9zM16 8a5 5 0 0 1 0 8M18.5 5.5a9 9 0 0 1 0 13" stroke="#5b4413" stroke-width="2" fill="none"/></svg>';
+
+/* ---------- toast ---------- */
+let tT;function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(tT);tT=setTimeout(()=>t.classList.remove('on'),2600)}
+
+/* ---------- speech ---------- */
+let trVoice=null;
+function pickVoice(){const v=speechSynthesis.getVoices();trVoice=v.find(x=>/^tr(-|_|$)/i.test(x.lang))||null}
+if('speechSynthesis' in window){pickVoice();speechSynthesis.onvoiceschanged=pickVoice}
+function speak(text,btn,onend){
+  if(!('speechSynthesis' in window)){toast('Браузер не поддерживает озвучку');return}
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text);u.lang='tr-TR';u.rate=.88;if(trVoice)u.voice=trVoice;
+  if(!trVoice&&!speak.warned){speak.warned=1;toast('Турецкого голоса нет в системе — читаю как умею')}
+  $$('.say.on').forEach(b=>b.classList.remove('on'));
+  if(btn)btn.classList.add('on');
+  u.onend=u.onerror=()=>{btn&&btn.classList.remove('on');onend&&onend()};
+  speechSynthesis.speak(u);
+}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-say]');if(b){e.stopPropagation();speak(b.dataset.say,b.classList.contains('say')?b:b.querySelector('.say'))}});
+
+/* ---------- reveal + counters ---------- */
+function countUp(el){const n=+el.dataset.count;if(RM){el.textContent=n.toLocaleString('ru');return}
+  const d=1400,t0=performance.now();(function f(t){const p=Math.min(1,(t-t0)/d),e=1-Math.pow(1-p,3);el.textContent=Math.round(n*e).toLocaleString('ru');if(p<1)requestAnimationFrame(f)})(t0)}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;el.classList.add('in');
+  el.querySelectorAll?.('[data-count]').forEach(c=>{if(!c.dataset.done){c.dataset.done=1;countUp(c)}});
+  if(el.dataset.count&&!el.dataset.done){el.dataset.done=1;countUp(el)}
+  io.unobserve(el)}),{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+function observe(){ $$('.rv:not(.in)').forEach(el=>io.observe(el)); $$('[data-count]').forEach(el=>{if(!el.closest('.rv'))io.observe(el)}) }
+
+/* ---------- header / progress / sticky ---------- */
+const hdr=$('#hdr'),prog=$('#prog'),sticky=$('#sticky');
+addEventListener('scroll',()=>{const y=scrollY,h=document.documentElement.scrollHeight-innerHeight;
+  hdr.classList.toggle('sc',y>10);prog.style.width=(y/h*100)+'%';
+  const a=$('#dir').offsetTop, fin=$('#final').offsetTop-innerHeight*.6;
+  sticky.classList.toggle('on',y>a&&y<fin)},{passive:true});
+
+/* ---------- hero tilt ---------- */
+const mc=$('#mapCard');
+if(matchMedia('(hover:hover)').matches&&!RM){$('.hero-vis').addEventListener('mousemove',e=>{const r=e.currentTarget.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+  mc.style.transform=`perspective(1100px) rotateX(${10-y*10}deg) rotateY(${x*12}deg) rotateZ(-2deg)`});
+  $('.hero-vis').addEventListener('mouseleave',()=>mc.style.transform='')}
+
+/* ---------- story chat ---------- */
+const chatLines=[
+  ['me','Affedersiniz, otogar nerede?','— Извините, где автовокзал?'],
+  ['him','<span class="fast">Otogar mı? Çok kolay! Düz gidin, ikinci ışıklardan sola dönün, köprüyü geçin, sonra sağda…</span>','— …'],
+  ['me','Tamam… teşekkürler!','— Понятно… спасибо! (не понятно)'],
+  ['him','Rica ederim! Beş dakika!','— Не за что! Пять минут!'],
+  ['me','🌊','(через 40 минут — море)']
+];
+let chatDone=false;
+function runChat(){if(chatDone)return;chatDone=true;const box=$('#chat'),typ=$('#typing');let i=0;
+  (function next(){if(i>=chatLines.length)return;const [w,t,r]=chatLines[i++];
+    if(w==='him'){box.appendChild(typ);typ.classList.add('on')}
+    setTimeout(()=>{typ.classList.remove('on');const b=document.createElement('div');b.className='bub '+w;b.innerHTML=t+'<small>'+r+'</small>';box.insertBefore(b,typ);requestAnimationFrame(()=>b.classList.add('show'));setTimeout(next,RM?50:900)},w==='him'?(RM?50:1300):(RM?50:500))})()}
+new IntersectionObserver((e,o)=>{if(e[0].isIntersecting){runChat();o.disconnect()}},{threshold:.35}).observe($('#chat'));
+
+/* ---------- ask phrases ---------- */
+const ask=[
+  ['Affedersiniz!','аффедэрсиниз','Извините! — чтобы остановить человека'],
+  ['Otogar nerede?','отогар нэрэдэ?','Где автовокзал? — любое место + nerede'],
+  ['Havalimanına nasıl gidebilirim?','хавалиманына насыл гидэбилирим?','Как добраться до аэропорта?'],
+  ['Buralarda eczane var mı?','бураларда эджзанэ вар мы?','Здесь поблизости есть аптека?'],
+  ['Yakın mı, uzak mı?','якын мы, узак мы?','Близко или далеко?'],
+  ['Yürüyerek kaç dakika?','юрюйерэк кач дакика?','Сколько минут пешком?'],
+  ['Kayboldum.','кайболдум','Я заблудился / заблудилась'],
+  ['Haritada gösterir misiniz?','харитада гёстэрир мисиниз?','Покажете на карте?'],
+  ['Daha yavaş söyler misiniz?','даха яваш сёйлер мисиниз?','Можно помедленнее?'],
+  ['Tekrar eder misiniz?','тэкрар эдэр мисиниз?','Повторите, пожалуйста?']
+];
+$('#askList').innerHTML=ask.map((a,i)=>`<div class="ph-item rv${i%3?' d'+(i%3):''}" data-say="${a[0]}"><div class="t"><span class="tr">${a[0]}</span><span class="tx">${a[1]}</span><span class="ru">${a[2]}</span></div><button class="say" aria-label="Озвучить">${SPK}</button></div>`).join('');
+
+/* ---------- direction tabs ---------- */
+const D=[
+  {tab:'Düz',tr:'Düz gidin',tx:'дюз гидин',ru:'Идите прямо',path:'M150 272V30',b:'rt',l:'0',
+   nt:'Усилить: <b>Dümdüz gidin</b> — прямо-прямо, никуда не сворачивая. Otogar düz — автовокзал прямо.'},
+  {tab:'Sağa',tr:'Sağa dönün',tx:'саа дёнюн',ru:'Поверните направо',path:'M150 272V200H290',b:'rb',l:'1',
+   nt:'<b>Sağa</b> — куда (направо). <b>Sağda</b> — где (справа). Market sağda — магазин справа. Одна буква, другой смысл.'},
+  {tab:'Sola',tr:'Sola dönün',tx:'сола дёнюн',ru:'Поверните налево',path:'M150 272V200H10',b:'lb',l:'2',
+   nt:'<b>Solda</b> — слева. Eczane solda — аптека слева. ğ в sağ не читается: «саа», а не «саг».'},
+  {tab:'İkinci soldan',tr:'İkinci soldan dönün',tx:'икинджи солдан дёнюн',ru:'Второй поворот налево',path:'M150 272V100H10',b:'lm',l:'3',
+   nt:'Буквально: «со второго левого поверните». <b>İlk</b> — первый, <b>ikinci</b> — второй, <b>üçüncü</b> — третий. Окончание -dan — из шага 3.'},
+  {tab:'Karşıda',tr:'Banka karşıda',tx:'банка каршыда',ru:'Банк напротив, через дорогу',path:'M150 272V218',b:'rm',l:'4',
+   nt:'<b>Karşıda</b> — напротив. <b>Otelin karşısında</b> — напротив отеля. Часто слышно с жестом рукой через улицу.'},
+  {tab:'Geri',tr:'Geri dönün',tx:'гэри дёнюн',ru:'Вернитесь назад',path:'M143 272V160C143 140 161 140 161 160V272',b:'rb',l:'5',
+   nt:'Самая обидная фраза маршрута. Значит, вы прошли мимо. Otel geride — отель позади.'}
+];
+let dAnim=null;
+function drawDir(i){
+  window.__dirIdx=i;dispatchEvent(new CustomEvent('dirtab',{detail:i}));
+  const d=D[i];$$('.tab').forEach((t,k)=>{t.classList.toggle('on',k===i);t.setAttribute('aria-selected',k===i)});
+  $$('.bld').forEach(b=>b.classList.remove('hl'));$$('.lbl').forEach(l=>l.classList.remove('on'));
+  $('#b-'+d.b).classList.add('hl');$('#l-'+d.l).classList.add('on');
+  const p=$('#dpath'),w=$('#walker');p.setAttribute('d',d.path);
+  cancelAnimationFrame(dAnim);const L=p.getTotalLength(),dur=RM?1:1500,t0=performance.now();
+  (function f(t){const k=Math.min(1,(t-t0)/dur),e=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;p.style.strokeDashoffset=1-e;const pt=p.getPointAtLength(L*e);w.setAttribute('cx',pt.x);w.setAttribute('cy',pt.y);if(k<1)dAnim=requestAnimationFrame(f)})(t0);
+  $('#dirInfo').innerHTML=`<div class="fade"><div class="k">${d.ru}</div><div class="price">${d.tr}</div><div class="ru">${d.tx}</div><div class="nt">${d.nt}</div>
+   <div class="row"><button class="btn" data-say="${d.tr}">Слушать</button><button class="btn-o" onclick="drawDir(${(i+1)%D.length})">Следующее →</button></div></div>`;
+}
+$('#tabs').innerHTML=D.map((d,i)=>`<button class="tab" role="tab" onclick="drawDir(${i})">${d.tab}</button>`).join('');
+let dirStarted=false;new IntersectionObserver((e,o)=>{if(e[0].isIntersecting&&!dirStarted){dirStarted=true;drawDir(0);o.disconnect()}},{threshold:.3}).observe($('#dir .dir-g'));
+$('#dirInfo').innerHTML='';
+
+/* ---------- grammar constructor ---------- */
+const W=[
+  {w:'otogar',r:['до автовокзала', 'на автовокзале', 'от автовокзала'],ru:'автовокзал',f:['otogara','otogarda','otogardan'],s:[['otogar','','a'],['otogar','','da'],['otogar','','dan']],
+   why:['Последняя гласная <b>a</b> → берём <b>a</b>. Слово на согласную — суффикс сразу.','Гласная <b>a</b> → <b>-da</b>. r — звонкая, d не меняется.','Гласная <b>a</b> → <b>-dan</b>.']},
+  {w:'müze',r:['до музея', 'в музее', 'от музея'],ru:'музей',f:['müzeye','müzede','müzeden'],s:[['müze','y','e'],['müze','','de'],['müze','','den']],
+   why:['Слово кончается на гласную. Две гласные подряд турецкий не любит, вставляем буфер <b>y</b>: müze + y + e.','Гласная <b>e</b> → <b>-de</b>. Буфер не нужен: суффикс начинается с согласной.','Гласная <b>e</b> → <b>-den</b>.']},
+  {w:'eczane',r:['до аптеки', 'в аптеке', 'от аптеки'],ru:'аптека',f:['eczaneye','eczanede','eczaneden'],s:[['eczane','y','e'],['eczane','','de'],['eczane','','den']],
+   why:['На гласную → буфер <b>y</b>. eczane + y + e.','Гласная <b>e</b> → <b>-de</b>.','Гласная <b>e</b> → <b>-den</b>.']},
+  {w:'durak',r:['до остановки', 'на остановке', 'от остановки'],ru:'остановка',f:['durağa','durakta','duraktan'],s:[['durağ','','a'],['durak','','ta'],['durak','','tan']],
+   why:['Ловушка! <b>k</b> между гласными смягчается в <b>ğ</b>: durak → durağa. Читается «дураа».','<b>k</b> — глухая. После глухих d превращается в <b>t</b>: durak<b>ta</b>.','Та же история: глухая k → <b>-tan</b>.']},
+  {w:'havalimanı',r:['до аэропорта', 'в аэропорту', 'от аэропорта'],ru:'аэропорт',f:['havalimanına','havalimanında','havalimanından'],s:[['havalimanı','n','a'],['havalimanı','n','da'],['havalimanı','n','dan']],
+   why:['Составное слово (hava limanı), в конце уже есть притяжательное -ı. Поэтому буфер <b>n</b>, а не y.','Тот же буфер <b>n</b>: havalimanı + n + da.','Буфер <b>n</b>: havalimanı + n + dan.']},
+  {w:'ışıklar',r:['до светофора', 'у светофора', 'на светофоре'],ru:'светофор',f:['ışıklara','ışıklarda','ışıklardan'],s:[['ışıklar','','a'],['ışıklar','','da'],['ışıklar','','dan']],
+   why:['Светофор турки говорят во множественном числе: ışıklar — «огни». Гласная <b>a</b> → <b>-a</b>.','Гласная <b>a</b> → <b>-da</b>.','Главная фраза урока: <b>ışıklardan</b> sağa — на светофоре направо.']},
+  {w:'köprü',r:['до моста', 'на мосту', 'после моста'],ru:'мост',f:['köprüye','köprüde','köprüden'],s:[['köprü','y','e'],['köprü','','de'],['köprü','','den']],
+   why:['Гласная <b>ü</b> → ряд e. На гласную → буфер <b>y</b>.','Гласная <b>ü</b> → <b>-de</b>.','Гласная <b>ü</b> → <b>-den</b>.']},
+  {w:'market',r:['до магазина', 'в магазине', 'от магазина'],ru:'магазин',f:['markete','markette','marketten'],s:[['market','','e'],['market','','te'],['market','','ten']],
+   why:['Последняя гласная <b>e</b> (не a!) → <b>-e</b>.','<b>t</b> — глухая → <b>-te</b>. Получается две t: market<b>te</b>.','Глухая t → <b>-ten</b>.']}
+];
+const C=[['куда','-a/-e'],['где','-da/-de'],['откуда / через','-dan/-den']];
+const EX=[
+  (f,r)=>[`${cap(f)} nasıl gidebilirim?`,`Как дойти ${r}?`],
+  (f,r)=>[`${cap(f)} bekliyorum.`,`Жду вас ${r}.`],
+  (f,r)=>[`${cap(f)} sağa dönün.`,`${r[0].toUpperCase()+r.slice(1)} поверните направо.`]
+];
+function cap(s){return s.replace(/^./,c=>c==='ı'?'I':c==='i'?'İ':c.toLocaleUpperCase('tr'))}
+let gw=3,gc=0;
+function renderG(){
+  $('#words').innerHTML=W.map((x,i)=>`<button class="pill${i===gw?' on':''}" onclick="gw=${i};renderG()">${x.w}<small>${x.ru}</small></button>`).join('');
+  $('#cs').innerHTML=C.map((x,i)=>`<button class="pill${i===gc?' on':''}" onclick="gc=${i};renderG()">${x[0]}<small>${x[1]}</small></button>`).join('');
+  const x=W[gw],[r,b,s]=x.s[gc],f=x.f[gc];
+  $('#morph').innerHTML=`<span class="m root">${r}</span>`+(b?`<span class="m op">+</span><span class="m buf" style="animation-delay:.12s">${b}</span>`:'')+`<span class="m op">+</span><span class="m sfx" style="animation-delay:.24s">${s}</span><span class="m op">=</span><span class="m res" style="animation-delay:.36s">${f}</span>`;
+  $('#why').innerHTML=x.why[gc];
+  const [t,ru]=EX[gc](f,x.r[gc]);
+  $('#ex').innerHTML=`<button class="say" data-say="${t}" aria-label="Озвучить">${SPK}</button><div class="t"><span class="tr">${t}</span><span>${ru}</span></div>`;
+}
+renderG();
+
+/* ---------- quest ---------- */
+const Q=[
+  {start:[180,330],instr:'Düz gidin, ışıklardan sağa dönün. Eczane solda.',path:'M180 330V180H250',
+   pins:[[250,152],[250,208],[110,152]],ok:0,ru:'Идите прямо, на светофоре направо. Аптека слева.',
+   why:'Светофор только на втором перекрёстке. После поворота направо «слева» — это верхняя сторона улицы.'},
+  {start:[180,330],instr:'Düz gidin, ikinci soldan dönün. Cami sağda.',path:'M180 330V180H110',
+   pins:[[110,208],[110,152],[110,272]],ok:1,ru:'Идите прямо, на втором повороте налево. Мечеть справа.',
+   why:'Ikinci — второй. Первый поворот пропускаем. Идём налево (на запад) — правая сторона оказывается сверху.'},
+  {start:[180,330],instr:'İlk sağdan dönün, sonra dümdüz gidin. Otogar karşınızda.',path:'M180 330V300H340',
+   pins:[[180,24],[340,300],[20,300]],ok:1,ru:'Сверните на первом повороте направо, потом всё время прямо. Автовокзал будет перед вами.',
+   why:'İlk sağdan — первый же поворот направо. Dümdüz — никуда не сворачивая. Karşınızda — прямо перед вами.'},
+  {start:[180,240],instr:'Geri dönün, köprüyü geçin. Plaj köprünün arkasında.',path:'M180 240V388',
+   pins:[[180,24],[300,240],[180,386]],ok:2,ru:'Вернитесь назад, перейдите мост. Пляж за мостом.',
+   why:'Geri — назад, то есть вниз по карте. Köprüyü geçin — перейдите мост. Arkasında — за ним.'}
+];
+let qi=0,qscore=0,qlock=false;
+function renderQ(){
+  const q=Q[qi];qlock=false;
+  $('#qstep').textContent=`Маршрут ${qi+1} из ${Q.length}`;$('#qbar').style.width=(qi/Q.length*100)+'%';
+  $('#qinstr').textContent=q.instr;$('#qfb').className='qfb';$('#qfb').innerHTML='Выберите пин A, B или C на карте.';$('#qnext').style.display='none';
+  $('#qsay').dataset.say=q.instr;
+  $('#qstart').setAttribute('transform',`translate(${q.start[0]} ${q.start[1]})`);
+  const p=$('#qpath');p.setAttribute('d','');p.style.strokeDashoffset=1;$('#qwalker').setAttribute('opacity',0);
+  $('#qpins').innerHTML=q.pins.map((pt,i)=>`<g class="qpin" data-i="${i}" transform="translate(${pt[0]} ${pt[1]})" tabindex="0" role="button" aria-label="Пин ${'ABC'[i]}"><circle r="13" fill="url(#gb)" stroke="#c98f25" stroke-width="1.5"/><text y="4.5" text-anchor="middle" font-family="Montserrat" font-weight="700" font-size="12" fill="#5b4413">${'ABC'[i]}</text></g>`).join('');
+}
+function pickQ(i){
+  if(qlock)return;qlock=true;const q=Q[qi],ok=i===q.ok;if(ok)qscore++;
+  $$('.qpin').forEach((g,k)=>{g.classList.toggle('ok',k===q.ok);g.classList.toggle('bad',k===i&&!ok);if(k!==q.ok&&k!==i)g.classList.add('dim')});
+  const p=$('#qpath'),w=$('#qwalker');p.setAttribute('d',q.path);const L=p.getTotalLength(),dur=RM?1:1600,t0=performance.now();w.setAttribute('opacity',1);
+  (function f(t){const k=Math.min(1,(t-t0)/dur);p.style.strokeDashoffset=1-k;const pt=p.getPointAtLength(L*k);w.setAttribute('cx',pt.x);w.setAttribute('cy',pt.y);if(k<1)requestAnimationFrame(f)})(t0);
+  $('#qfb').className='qfb '+(ok?'good':'bad');
+  $('#qfb').innerHTML=`<b>${ok?'Evet! Дошли.':'Hayır. Вы оказались не там.'}</b> ${q.ru}<br><span class="small">${q.why}</span>`;
+  const n=$('#qnext');n.style.display='';n.textContent=qi<Q.length-1?'Следующий маршрут':'Мой результат';
+}
+$('#qpins').addEventListener('click',e=>{const g=e.target.closest('.qpin');if(g)pickQ(+g.dataset.i)});
+$('#qpins').addEventListener('keydown',e=>{const g=e.target.closest('.qpin');if(g&&(e.key==='Enter'||e.key===' ')){e.preventDefault();pickQ(+g.dataset.i)}});
+function finishQ(){
+  $('#qbar').style.width='100%';$('#qstep').textContent='Квест пройден';
+  $('#qinstr').textContent=`${qscore} из ${Q.length} маршрутов`;
+  $('#qfb').className='qfb';
+  $('#qfb').innerHTML=qscore===Q.length?'<b>Tebrikler!</b> Дедушка у магазина вам больше не страшен. В Alterna таких интерактивов 109.':'<b>Нормально для первого раза.</b> Я в первую неделю дошёл до моря. Пройдите ещё раз, маршруты те же.';
+  $('#qpins').innerHTML='';$('#qnext').textContent='Пройти заново';qdone=true}
+let qdone=false;
+$('#qnext').onclick=()=>{if(qdone){qdone=false;qi=0;qscore=0;renderQ()}else if(qi<Q.length-1){qi++;renderQ()}else finishQ()};
+renderQ();
+
+/* ---------- dialogue ---------- */
+const DL=[
+  ['me','Affedersiniz, Kaleiçi\'ne nasıl gidebilirim?','Извините, как пройти в Калеичи?'],
+  ['him','Kaleiçi mi? Çok yakın. Düz gidin, ikinci ışıklardan sola dönün.','Калеичи? Совсем рядом. Идите прямо, на втором светофоре налево.'],
+  ['me','İkinci ışıklardan sola, değil mi?','На втором светофоре налево, да?'],
+  ['him','Evet. Sonra Saat Kulesi\'ni göreceksiniz. Kaleiçi, Saat Kulesi\'nin arkasında.','Да. Потом увидите Часовую башню. Калеичи — за ней.'],
+  ['me','Yürüyerek kaç dakika?','Сколько минут пешком?'],
+  ['him','On dakika. Ama hava sıcak, tramvaya binin.','Десять минут. Но жарко, садитесь на трамвай.'],
+  ['me','Çok teşekkür ederim!','Большое спасибо!'],
+  ['him','Rica ederim. İyi gezmeler!','Не за что. Хорошей прогулки!']
+];
+$('#dlg').innerHTML=DL.map((d,i)=>`<div class="dl ${d[0]} rv" id="dl${i}" data-say="${d[1].replace(/"/g,'&quot;')}"><div class="who">${d[0]==='me'?'Вы':'TR'}</div><div class="t"><span class="tr">${d[1]}</span><span class="ru">${d[2]}</span></div><button class="say" aria-label="Озвучить">${SPK}</button></div>`).join('');
+let playing=false;
+$('#playAll').onclick=()=>{if(playing){playing=false;speechSynthesis.cancel();$$('.dl').forEach(x=>x.classList.remove('playing'));$('#playAll').textContent='Слушать весь диалог';return}
+  playing=true;$('#playAll').textContent='Остановить';let i=0;
+  (function next(){$$('.dl').forEach(x=>x.classList.remove('playing'));if(!playing||i>=DL.length){playing=false;$('#playAll').textContent='Слушать весь диалог';return}
+    const el=$('#dl'+i);el.classList.add('playing');speak(DL[i][1],el.querySelector('.say'),()=>{i++;setTimeout(next,350)})})()};
+$('#ruToggle').onclick=e=>{const h=$('#dlg').classList.toggle('hide-ru');e.currentTarget.textContent=h?'Показать перевод':'Скрыть перевод'};
+
+/* ---------- quiz ---------- */
+const QZ=[
+  {q:'«Işıklardan sağa dönün» — это…',o:['На светофоре поверните направо','Светофор справа от вас','Идите до светофора и назад','Справа будет свет'],a:0,e:'-dan — «от/через». От светофора — направо.'},
+  {q:'Как сказать «на остановку» (куда?)',o:['durakya','durağe','durağa','durakda'],a:2,e:'k смягчается в ğ, гласная a → -a. Durağa.'},
+  {q:'«Eczane solda» значит…',o:['Поверните к аптеке налево','Аптека слева','Аптека за углом','Аптека закрыта'],a:1,e:'Solda — где? слева. Sola — куда? налево.'},
+  {q:'Вам ответили слишком быстро. Что сказать?',o:['Daha hızlı!','Yavaş git.','Daha yavaş söyler misiniz?','Kayboldum.'],a:2,e:'«Можно помедленнее?» — вежливо и работает.'},
+  {q:'«İkinci soldan dönün» — это…',o:['Второй поворот налево','Через два квартала направо','Вернитесь налево','Налево, потом ещё налево'],a:0,e:'İkinci — второй, soldan — с левого. Второй поворот налево.'}
+];
+let zi=0,zs=0,zsel=-1,zchecked=false;
+function renderZ(){
+  const b=$('#quizBox');
+  if(zi>=QZ.length){const lvl=zs===5?'Местный житель':zs>=3?'Уверенный турист':'Турист с навигатором';
+    b.innerHTML=`<div class="res fade"><div class="small">Ваш результат</div><div class="big">${zs}/5</div><div class="q" style="margin:12px 0 6px">${lvl}</div>
+    <p class="small" style="max-width:420px;margin:0 auto">Это был 1 гайд из 128. Представьте, как вы будете понимать турецкий, когда пройдёте остальные.</p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px"><a class="btn" href="https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41" target="_blank" rel="noopener" data-cta="quiz">Продолжить в Alterna</a><button class="btn-o" style="height:58px" onclick="zi=0;zs=0;renderZ()">Ещё раз</button></div></div>`;return}
+  const z=QZ[zi];zsel=-1;zchecked=false;
+  b.innerHTML=`<div class="fade"><div class="small">Вопрос ${zi+1} из ${QZ.length}</div><div class="bar" style="max-width:380px"><i style="width:${(zi+1)/QZ.length*100}%"></i></div>
+   <div class="q">${z.q}</div><div class="opts">${z.o.map((o,i)=>`<button class="opt" data-i="${i}">${o}</button>`).join('')}</div>
+   <div class="qexp" id="zexp"></div><button class="btn" id="zbtn">Проверить</button></div>`;
+  $$('.opt').forEach(o=>o.onclick=()=>{if(zchecked)return;$$('.opt').forEach(x=>x.classList.remove('sel'));o.classList.add('sel');zsel=+o.dataset.i});
+  $('#zbtn').onclick=()=>{
+    if(!zchecked){if(zsel<0){toast('Выберите вариант');return}zchecked=true;const ok=zsel===z.a;if(ok)zs++;
+      $$('.opt').forEach((x,k)=>{x.classList.remove('sel');if(k===z.a)x.classList.add('right');else if(k===zsel)x.classList.add('wrong')});
+      $('#zexp').innerHTML=(ok?'<b>Doğru.</b> ':'<b>Не совсем.</b> ')+z.e;$('#zbtn').textContent=zi<QZ.length-1?'Следующий вопрос':'Результат'}
+    else{zi++;renderZ()}};
+}
+renderZ();
+
+/* ---------- calculator ---------- */
+function calc(){
+  const d=+$('#s1').value,t=+$('#s2').value,m=+$('#s3').value;
+  $('#o1').textContent=d;$('#o2').textContent=t;$('#o3').textContent=m+' мин';
+  $$('.sl input').forEach(i=>i.style.setProperty('--p',((i.value-i.min)/(i.max-i.min)*100)+'%'));
+  const h=d*t*m/60;$('#cOut').textContent=(h<10?h.toFixed(1).replace('.',','):Math.round(h))+' ч';
+  const days=h/8;
+  $('#cTxt').innerHTML=`Столько времени поездки уходит на переспрашивания, круги и такси вместо прогулки.${days>=1?` Это ${days<2?'целый день':Math.floor(days)+' полных дня'} по 8 часов.`:''} Доступ к платформе стоит $30. Один раз.`;
+}
+$$('.sl input').forEach(i=>i.addEventListener('input',calc));calc();
+
+/* ---------- platform video ---------- */
+const V=[
+  {k:'grammar',t:'Грамматика',d:['разбор правила по шагам, как в этом уроке','схема, которая считает форму на лету','таблицы-ловушки и исключения']},
+  {k:'trainer',t:'Тренажёр',d:['конструктор форм с буферными буквами','тренажёр с проверкой и статистикой','видео, как это объясняют самим туркам']},
+  {k:'cartoons',t:'Мультфильмы',d:['138 мультфильмов по уровням A1–B2','фильтры: дубляж, сериал, полный метр','медленная речь, картинка объясняет половину']},
+  {k:'podcasts',t:'Подкасты',d:['подкасты от A1 до C1','карта и маршрут по уровням','свой плейлист «Мои подкасты»']},
+  {k:'apps',t:'Приложения',d:['143 сервиса, 72 полностью бесплатных','фильтры по уровню, задаче и платформе','«связка, а не зоопарк» — что брать и зачем']}
+];
+let vi=0;const vid=$('#vid'),pb=$('#playBtn');
+function setV(i,play){vi=i;const v=V[i];$$('.vtab').forEach((t,k)=>t.classList.toggle('on',k===i));
+  vid.poster='media/'+v.k+'.jpg';vid.src='media/'+v.k+'.mp4';$('#vdesc').innerHTML='<li style="list-style:none;padding:0;margin-bottom:6px" class="small">В видео вы увидите:</li>'+v.d.map(x=>`<li>${x}</li>`).join('');
+  if(play){vid.play().catch(()=>{})}}
+$('#vtabs').innerHTML=V.map((v,i)=>`<button class="vtab" onclick="setV(${i},true)">${v.t}</button>`).join('');
+setV(0,false);
+pb.onclick=()=>{if(vid.paused){vid.play().catch(()=>{})}else vid.pause()};
+vid.addEventListener('play',()=>{pb.classList.add('pz');pb.innerHTML='<svg viewBox="0 0 24 24"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>'});
+vid.addEventListener('pause',()=>{pb.classList.remove('pz');pb.innerHTML='<svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>'});
+new IntersectionObserver(e=>{if(e[0].isIntersecting){if(!RM)vid.play().catch(()=>{})}else vid.pause()},{threshold:.5}).observe(vid);
+const lap=$('#laptop');
+if(matchMedia('(hover:hover)').matches&&!RM){lap.parentElement.addEventListener('mousemove',e=>{const r=lap.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;lap.style.transform=`perspective(1200px) rotateY(${-14+x*14}deg) rotateX(${8-y*8}deg)`});lap.parentElement.addEventListener('mouseleave',()=>lap.style.transform='')}
+
+/* ---------- phones marquee ---------- */
+const PH=['1915','1920','1926','1932','1936','1941','1946','1951','1956','1961','1962','1916'];
+(function(){
+  const wrap=$('#ringWrap'),ring=$('#ring');
+  ring.innerHTML=PH.map(n=>`<div class="phone"><img src="media/ph${n}.webp" alt="Экран платформы Alterna" loading="lazy" draggable="false"></div>`).join('');
+  const ph=[...ring.children],n=ph.length,step=360/n;let R=0,W=0,rot=0,vel=0,drag=false,px=0,lastUser=0,vis=false;
+  function layout(){W=innerWidth<760?150:190;R=Math.round(W/2/Math.tan(Math.PI/n))+24;
+    ring.style.width=W+'px';ring.style.marginLeft=(-W/2)+'px';
+    ph.forEach((p,i)=>{p.style.width=W+'px';p.dataset.a=i*step})}
+  function frame(){requestAnimationFrame(frame);if(!vis)return;
+    if(!drag){vel*=.95;rot+=vel;if(!RM&&performance.now()-lastUser>2000)rot-=.12}
+    ring.style.transform=`translateZ(${-R}px) rotateY(${rot}deg)`;
+    ph.forEach(p=>{let a=((+p.dataset.a+rot)%360+360)%360;if(a>180)a-=360;const f=Math.cos(a*Math.PI/180);
+      p.style.transform=`rotateY(${p.dataset.a}deg) translateZ(${R}px)`;p.style.filter=`brightness(${.6+.4*Math.max(0,f)}) blur(${f<0?1.5:0}px)`;p.style.zIndex=Math.round(f*100)})}
+  layout();addEventListener('resize',layout);
+  wrap.addEventListener('pointerdown',e=>{drag=true;px=e.clientX;vel=0;wrap.setPointerCapture(e.pointerId);wrap.classList.add('grab')});
+  wrap.addEventListener('pointermove',e=>{if(!drag)return;const dx=e.clientX-px;px=e.clientX;vel=dx*.25;rot+=vel;lastUser=performance.now()});
+  const up=()=>{drag=false;wrap.classList.remove('grab');lastUser=performance.now()};wrap.addEventListener('pointerup',up);wrap.addEventListener('pointercancel',up);
+  new IntersectionObserver(e=>{vis=e[0].isIntersecting},{rootMargin:'80px'}).observe(wrap);
+  frame();
+})();
+
+/* ---------- endowed progress ---------- */
+$('#segs').innerHTML=Array.from({length:32},(_,i)=>`<i${i===0?' class="f"':''}></i>`).join('');
+
+
+/* ---------- flip cards ---------- */
+$$('.fc').forEach(c=>c.addEventListener('click',e=>{if(e.target.closest('.say'))return;c.classList.toggle('flip')}));
+let fcDemo=false;new IntersectionObserver((e,o)=>{if(e[0].isIntersecting&&!fcDemo&&!RM){fcDemo=true;o.disconnect();
+  $$('.fc').forEach((c,i)=>{setTimeout(()=>c.classList.add('flip'),600+i*140);setTimeout(()=>c.classList.remove('flip'),1900+i*140)})}},{threshold:.4}).observe($('#fcg'));
+
+/* ---------- tilt + glare ---------- */
+if(matchMedia('(hover:hover)').matches&&!RM){$$('[data-tilt]').forEach(el=>{
+  el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+    el.style.transform=`perspective(900px) rotateX(${(.5-y)*8}deg) rotateY(${(x-.5)*10}deg) translateZ(0)`;el.style.setProperty('--gx',x*100+'%');el.style.setProperty('--gy',y*100+'%');el.classList.add('tilting')});
+  el.addEventListener('pointerleave',()=>{el.style.transform='';el.classList.remove('tilting')})})}
+
+/* ---------- mist parallax ---------- */
+if(!RM){const ms=$$('.mist');let tk=false;addEventListener('scroll',()=>{if(tk)return;tk=true;requestAnimationFrame(()=>{tk=false;ms.forEach(m=>{const t=m.parentElement.getBoundingClientRect().top;if(t<innerHeight&&t>-m.parentElement.offsetHeight)m.style.transform=`translateY(${-t*.12}px)`})})},{passive:true})}
+
+observe();
+</script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}</script>
+<script type="module" src="3d.js"></script>
+</body>
+</html>
