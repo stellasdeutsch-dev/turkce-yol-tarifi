@@ -452,6 +452,61 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
 .h1.rv.in{letter-spacing:.06em}
 .mist{will-change:transform}
 
+
+/* ===== more motion ===== */
+.ribbons{position:relative;height:170px;overflow:hidden;margin:-20px 0 -10px;pointer-events:none}
+.rb{position:absolute;left:-10%;width:120%;padding:13px 0;white-space:nowrap;overflow:hidden}
+.rb.r1{top:52px;transform:rotate(-4deg);background:linear-gradient(90deg,#f8d56f,#f2c04a,#f8d56f);box-shadow:0 22px 40px -22px rgba(200,140,30,.8);z-index:2}
+.rb.r2{top:62px;transform:rotate(3.5deg);background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rb-t{display:inline-flex;gap:26px;align-items:center;animation:mq 34s linear infinite;font-family:"Playfair Display",Georgia,serif;font-size:21px;color:#43361c;padding-left:26px}
+.rb.r2 .rb-t{animation-direction:reverse;animation-duration:42s;color:var(--ink2);font-family:Montserrat;font-weight:300;font-size:15px;letter-spacing:.14em;text-transform:uppercase}
+.rb-t i{font-style:normal;opacity:.55;font-size:.8em}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+.tl{position:relative;display:grid;gap:22px;margin-top:40px;padding-left:34px}
+.tl:before,.tl .fill{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:2px;background:#e9ecf2;border-radius:2px}
+.tl .fill{background:linear-gradient(180deg,var(--gold2),var(--gold));bottom:auto;height:0;transition:height 2.4s cubic-bezier(.5,0,.2,1)}
+.tl.go .fill{height:calc(100% - 12px)}
+.tl-i{position:relative;opacity:0;transform:translateX(-12px);transition:.6s}
+.tl.go .tl-i{opacity:1;transform:none}
+.tl-i:before{content:"";position:absolute;left:-30px;top:4px;width:14px;height:14px;border-radius:50%;background:#fff;border:2px solid #dfe3ea;transition:.4s}
+.tl.go .tl-i:before{border-color:var(--gold2);background:#fff8e3;box-shadow:0 0 0 5px rgba(243,197,82,.18)}
+.tl-i.last:before{background:#bfe0f7;border-color:#8fc3ea}
+.tl-i b{font-family:"Playfair Display",Georgia,serif;font-size:22px;font-weight:500;color:var(--ink);display:block;line-height:1}
+.tl-i span{font-size:13px;color:var(--ink2)}
+.tl.go .tl-i:nth-child(2){transition-delay:.1s}.tl.go .tl-i:nth-child(3){transition-delay:.7s}.tl.go .tl-i:nth-child(4){transition-delay:1.3s}.tl.go .tl-i:nth-child(5){transition-delay:2s}
+
+.m{animation:drop3 .55s cubic-bezier(.3,1.5,.5,1) both}
+.m.root{box-shadow:0 1px 0 #e2e5ec,0 2px 0 #dde1e8,0 3px 0 #d8dce4,0 4px 0 #d2d7df,0 5px 0 #ccd2db,0 12px 18px -8px rgba(38,56,110,.4)}
+.m.buf{box-shadow:0 1px 0 #cbd5ee,0 2px 0 #c3cdea,0 3px 0 #bbc6e6,0 4px 0 #b3bfe2,0 12px 18px -8px rgba(60,80,160,.35)}
+.m.sfx{box-shadow:0 1px 0 #efbd48,0 2px 0 #e8b540,0 3px 0 #e1ad38,0 4px 0 #d9a432,0 5px 0 #d19c2c,0 12px 18px -8px rgba(200,140,30,.6)}
+.m.op,.m.res{box-shadow:none}
+@keyframes drop3{from{opacity:0;transform:perspective(400px) translateY(-30px) rotateX(75deg)}to{opacity:1;transform:none}}
+
+@property --ang{syntax:'<angle>';inherits:false;initial-value:0deg}
+.glow:before{content:"";position:absolute;inset:-2px;border-radius:inherit;padding:2px;background:conic-gradient(from var(--ang),transparent 0 55%,#f3c552 72%,#fff3c8 78%,#f3c552 84%,transparent 96%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spinA 4.5s linear infinite;pointer-events:none;z-index:0}
+@keyframes spinA{to{--ang:360deg}}
+.form{position:relative}
+
+.cf{position:fixed;z-index:120;left:0;top:0;width:9px;height:14px;border-radius:2px;pointer-events:none}
+.spot{position:fixed;inset:0;z-index:45;pointer-events:none;background:radial-gradient(520px circle at var(--x,-999px) var(--y,-999px),rgba(243,197,82,.10),transparent 45%)}
+
+.tip .ic{width:44px;height:44px;margin-bottom:12px;position:relative}
+.tip .ic svg{width:100%;height:100%;overflow:visible}
+.hand{animation:point 1.8s ease-in-out infinite;transform-origin:center}
+@keyframes point{50%{transform:translateX(6px)}}
+.clock-h{transform-origin:22px 22px;animation:rot 3s linear infinite}
+.clock-m{transform-origin:22px 22px;animation:rot 12s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+.pp1{animation:bob2 1.6s ease-in-out infinite}.pp2{animation:bob2 1.6s .4s ease-in-out infinite}
+@keyframes bob2{50%{transform:translateY(-3px)}}
+
+.fin{overflow:hidden}
+#sparks{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.num b{background:linear-gradient(180deg,var(--ink) 40%,#9aa0aa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn:before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(120px circle at var(--bx,50%) var(--by,50%),rgba(255,255,255,.55),transparent 60%);opacity:0;transition:opacity .3s}
+.btn:hover:before{opacity:1}
+
 /* ====== ≥ 760 ====== */
 @media (min-width:760px){
   body{font-size:16px}
@@ -474,6 +529,12 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
   .ct-card{margin:60px 0 0 60px}
   .sticky{left:auto;right:24px;bottom:24px;width:420px}
   .fc-g{grid-template-columns:repeat(4,1fr)}
+  .tl{grid-template-columns:repeat(4,1fr);padding-left:0;padding-top:34px}
+  .tl:before,.tl .fill{left:6px;right:6px;top:11px;bottom:auto;width:auto;height:2px}
+  .tl .fill{width:0;right:auto;transition:width 2.4s cubic-bezier(.5,0,.2,1)}
+  .tl.go .fill{width:calc(100% - 12px);height:2px}
+  .tl-i:before{left:0;top:-30px}
+  .rb-t{font-size:26px}
   .fc{height:200px}
   .coin3d{width:140px;height:140px}
   .ring-wrap{height:520px}
@@ -584,6 +645,8 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
   </div>
 </section>
 
+<div class="ribbons" aria-hidden="true"><div class="rb r2"><div class="rb-t"><span>извините</span><i>·</i><span>идите прямо</span><i>·</i><span>направо</span><i>·</i><span>налево</span><i>·</i><span>на светофоре налево</span><i>·</i><span>напротив</span><i>·</i><span>на углу</span><i>·</i><span>назад</span><i>·</i><span>где автовокзал?</span><i>·</i><span>близко?</span><i>·</i><span>извините</span><i>·</i><span>идите прямо</span><i>·</i><span>направо</span><i>·</i><span>налево</span><i>·</i><span>на светофоре налево</span><i>·</i><span>напротив</span><i>·</i><span>на углу</span><i>·</i><span>назад</span><i>·</i><span>где автовокзал?</span><i>·</i><span>близко?</span><i>·</i></div></div><div class="rb r1"><div class="rb-t"><span>Affedersiniz</span><i>✦</i><span>Düz gidin</span><i>✦</i><span>Sağa dönün</span><i>✦</i><span>Sola dönün</span><i>✦</i><span>Işıklardan sola</span><i>✦</i><span>Karşıda</span><i>✦</i><span>Köşede</span><i>✦</i><span>Geri dönün</span><i>✦</i><span>Otogar nerede?</span><i>✦</i><span>Yakın mı?</span><i>✦</i><span>Affedersiniz</span><i>✦</i><span>Düz gidin</span><i>✦</i><span>Sağa dönün</span><i>✦</i><span>Sola dönün</span><i>✦</i><span>Işıklardan sola</span><i>✦</i><span>Karşıda</span><i>✦</i><span>Köşede</span><i>✦</i><span>Geri dönün</span><i>✦</i><span>Otogar nerede?</span><i>✦</i><span>Yakın mı?</span><i>✦</i></div></div></div>
+
 <!-- ===== STORY (Dan style) ===== -->
 <section class="story" id="story">
   <div class="mist"><i></i></div>
@@ -607,6 +670,15 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
     <div class="card chat rv d2" id="chat">
       <div class="top"><div class="ava">TA</div><div><b>Анталья, 1-я неделя</b><span>реконструкция диалога</span></div></div>
       <div class="typing" id="typing"><i></i><i></i><i></i></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="tl" id="tl">
+      <div class="fill"></div>
+      <div class="tl-i"><b>0:00</b><span>Affedersiniz, otogar nerede?</span></div>
+      <div class="tl-i"><b>0:12</b><span>Дедушка закончил объяснять</span></div>
+      <div class="tl-i"><b>0:13</b><span>Teşekkürler. Понял одно слово</span></div>
+      <div class="tl-i last"><b>40:00</b><span>Море. Красиво. Не otogar</span></div>
     </div>
   </div>
 </section>
@@ -788,9 +860,9 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
       <h2 class="h2 rv">Чего нет <span class="gold">в учебнике</span></h2>
     </div>
     <div class="tips">
-      <div class="tip rv" data-tilt><div class="n">01</div><b>Спрашивайте двоих</b><p>Bilmiyorum я слышал редко. Чаще мне показывали дорогу. Иногда правильную. Если двое показали в одну сторону, идите.</p></div>
-      <div class="tip rv d1" data-tilt><div class="n">02</div><b>Beş dakika — это расстояние</b><p>Пять минут по-турецки означают «недалеко». Иногда это пятнадцать. Спросите yürüyerek kaç dakika? и прибавьте запас.</p></div>
-      <div class="tip rv d2" data-tilt><div class="n">03</div><b>Смотрите на руку</b><p>Şurada — «вон там», и дальше жест. Слово вам ничего не скажет, рука скажет. Слушайте düz, sağ, sol, а направление берите у жеста.</p></div>
+      <div class="tip rv" data-tilt><div class="n">01</div><div class="ic"><svg viewBox="0 0 44 44" fill="none" stroke="#c98f25" stroke-width="2.4" stroke-linecap="round"><g class="pp1"><circle cx="13" cy="13" r="5"/><path d="M4 32c1-6 5-9 9-9s8 3 9 9"/></g><g class="pp2"><circle cx="31" cy="15" r="5"/><path d="M22 34c1-6 5-9 9-9s8 3 9 9"/></g><path d="M8 40h28" stroke="#f3c552"/></svg></div><b>Спрашивайте двоих</b><p>Bilmiyorum я слышал редко. Чаще мне показывали дорогу. Иногда правильную. Если двое показали в одну сторону, идите.</p></div>
+      <div class="tip rv d1" data-tilt><div class="n">02</div><div class="ic"><svg viewBox="0 0 44 44" fill="none" stroke="#c98f25" stroke-width="2.4" stroke-linecap="round"><circle cx="22" cy="22" r="18"/><path class="clock-m" d="M22 22V9"/><path class="clock-h" d="M22 22h8" stroke="#f3c552"/></svg></div><b>Beş dakika — это расстояние</b><p>Пять минут по-турецки означают «недалеко». Иногда это пятнадцать. Спросите yürüyerek kaç dakika? и прибавьте запас.</p></div>
+      <div class="tip rv d2" data-tilt><div class="n">03</div><div class="ic"><svg viewBox="0 0 44 44" fill="none" stroke="#c98f25" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><g class="hand"><path d="M6 24h18M18 18l6 6-6 6"/><path d="M26 16v16" stroke="#f3c552"/></g><path d="M34 10l6 4-6 4" opacity=".5"/></svg></div><b>Смотрите на руку</b><p>Şurada — «вон там», и дальше жест. Слово вам ничего не скажет, рука скажет. Слушайте düz, sağ, sol, а направление берите у жеста.</p></div>
     </div>
   </div>
 </section>
@@ -909,7 +981,7 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
       </div>
     </div>
     <div>
-      <div class="dan rv">
+      <div class="dan rv glow">
         <p>У меня был TÖMER. Год турецкого. Каждый день.</p>
         <p class="g">Я знаю, где турецкий ломается. На падежах. На гармонии гласных. На дедушке, который объясняет дорогу за двенадцать секунд.</p>
         <p>Я собрал в одно место всё, что было нужно мне тогда.</p>
@@ -955,6 +1027,7 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
 <!-- ===== FINAL CTA ===== -->
 <section class="fin" id="final">
   <div class="mist"><i></i></div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap">
     <h2 class="h2 rv" style="max-width:640px">Получите доступ к платформе <span class="gold">и не теряйтесь</span> больше</h2>
     <div class="fin-g" style="margin-top:20px">
@@ -962,7 +1035,7 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
         <div class="pg p1"><img src="media/ph1961.webp" alt="Экран: маршрут от нуля до свободного турецкого" loading="lazy"></div>
         <div class="pg p2"><img src="media/ph1916.webp" alt="Экран: YouTube-каталог по уровням" loading="lazy"></div>
       </div>
-      <div class="form rv d1" data-tilt>
+      <div class="form rv d1 glow" data-tilt>
         <h3>Alterna A0 → C1</h3>
         <p class="s">Грамматика, лексика, тренажёры и 1716 материалов по уровням</p>
         <div class="fake">Цена: <b>$30</b></div>
@@ -999,7 +1072,7 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
         </g>
       </svg>
       <svg class="bigpin" viewBox="0 0 56 76"><defs><linearGradient id="gp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe29a"/><stop offset="1" stop-color="#e0a936"/></linearGradient></defs><path d="M28 74S4 44 4 27a24 24 0 0 1 48 0c0 17-24 47-24 47z" fill="url(#gp)" stroke="#c98f25" stroke-width="1.5"/><circle cx="28" cy="27" r="9" fill="#fff"/></svg>
-      <div class="ct-card">
+      <div class="ct-card glow" style="position:relative">
         <h4>Контактная информация</h4>
         <dl>
           <dt>Автор</dt><dd>Тимур Ахметов<br>Akdeniz Üniversitesi, Анталья</dd>
@@ -1022,6 +1095,7 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
   <a class="btn" href="https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41" target="_blank" rel="noopener" data-cta="sticky">Доступ</a>
 </div>
 <div class="toast" id="toast"></div>
+<div class="spot" id="spot" aria-hidden="true"></div>
 
 <script>
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
@@ -1209,7 +1283,7 @@ function finishQ(){
   $('#qinstr').textContent=`${qscore} из ${Q.length} маршрутов`;
   $('#qfb').className='qfb';
   $('#qfb').innerHTML=qscore===Q.length?'<b>Tebrikler!</b> Дедушка у магазина вам больше не страшен. В Alterna таких интерактивов 109.':'<b>Нормально для первого раза.</b> Я в первую неделю дошёл до моря. Пройдите ещё раз, маршруты те же.';
-  $('#qpins').innerHTML='';$('#qnext').textContent='Пройти заново';qdone=true}
+  $('#qpins').innerHTML='';$('#qnext').textContent='Пройти заново';qdone=true;if(qscore>=3)boomAt($('#qinstr'))}
 let qdone=false;
 $('#qnext').onclick=()=>{if(qdone){qdone=false;qi=0;qscore=0;renderQ()}else if(qi<Q.length-1){qi++;renderQ()}else finishQ()};
 renderQ();
@@ -1244,7 +1318,7 @@ const QZ=[
 let zi=0,zs=0,zsel=-1,zchecked=false;
 function renderZ(){
   const b=$('#quizBox');
-  if(zi>=QZ.length){const lvl=zs===5?'Местный житель':zs>=3?'Уверенный турист':'Турист с навигатором';
+  if(zi>=QZ.length){if(zs>=3)setTimeout(()=>boomAt(b),200);const lvl=zs===5?'Местный житель':zs>=3?'Уверенный турист':'Турист с навигатором';
     b.innerHTML=`<div class="res fade"><div class="small">Ваш результат</div><div class="big">${zs}/5</div><div class="q" style="margin:12px 0 6px">${lvl}</div>
     <p class="small" style="max-width:420px;margin:0 auto">Это был 1 гайд из 128. Представьте, как вы будете понимать турецкий, когда пройдёте остальные.</p>
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px"><a class="btn" href="https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41" target="_blank" rel="noopener" data-cta="quiz">Продолжить в Alterna</a><button class="btn-o" style="height:58px" onclick="zi=0;zs=0;renderZ()">Ещё раз</button></div></div>`;return}
@@ -1332,6 +1406,34 @@ if(matchMedia('(hover:hover)').matches&&!RM){$$('[data-tilt]').forEach(el=>{
 
 /* ---------- mist parallax ---------- */
 if(!RM){const ms=$$('.mist');let tk=false;addEventListener('scroll',()=>{if(tk)return;tk=true;requestAnimationFrame(()=>{tk=false;ms.forEach(m=>{const t=m.parentElement.getBoundingClientRect().top;if(t<innerHeight&&t>-m.parentElement.offsetHeight)m.style.transform=`translateY(${-t*.12}px)`})})},{passive:true})}
+
+/* ---------- confetti ---------- */
+function confetti(x,y,n=70){if(RM)return;const cols=['#f3c552','#ffe9a6','#e0a936','#ffffff','#dfe6fb','#7fcf8e'];
+  for(let i=0;i<n;i++){const d=document.createElement('i');d.className='cf';d.style.background=cols[i%cols.length];document.body.appendChild(d);
+    const a=Math.random()*Math.PI*2,v=120+Math.random()*260,dx=Math.cos(a)*v,dy=Math.sin(a)*v-220,r=(Math.random()-.5)*900;
+    d.animate([{transform:`translate(${x}px,${y}px) rotate(0)`,opacity:1},{transform:`translate(${x+dx}px,${y+dy+420}px) rotate(${r}deg)`,opacity:0}],{duration:1400+Math.random()*900,easing:'cubic-bezier(.2,.6,.4,1)'}).onfinish=()=>d.remove()}}
+function boomAt(el){const r=el.getBoundingClientRect();confetti(r.left+r.width/2,r.top+r.height/2)}
+document.addEventListener('pointerdown',e=>{const b=e.target.closest('[data-cta]');if(b)confetti(e.clientX,e.clientY,40)});
+
+/* ---------- timeline ---------- */
+new IntersectionObserver((e,o)=>{if(e[0].isIntersecting){$('#tl').classList.add('go');o.disconnect()}},{threshold:.4}).observe($('#tl'));
+
+/* ---------- button light + cursor spot ---------- */
+if(matchMedia('(hover:hover)').matches&&!RM){
+  document.addEventListener('pointermove',e=>{const s=$('#spot');s.style.setProperty('--x',e.clientX+'px');s.style.setProperty('--y',e.clientY+'px');
+    const b=e.target.closest('.btn');if(b){const r=b.getBoundingClientRect();b.style.setProperty('--bx',(e.clientX-r.left)+'px');b.style.setProperty('--by',(e.clientY-r.top)+'px')}},{passive:true})}
+
+/* ---------- laptop turns with scroll ---------- */
+if(!RM){let lapHover=false;const lapEl=$('#laptop');lapEl.parentElement.addEventListener('mouseenter',()=>lapHover=true);lapEl.parentElement.addEventListener('mouseleave',()=>lapHover=false);
+  addEventListener('scroll',()=>{if(lapHover)return;const r=lapEl.getBoundingClientRect(),k=Math.max(0,Math.min(1,1-(r.top+r.height/2)/innerHeight));
+    lapEl.style.transform=`perspective(1200px) rotateY(${-32+k*30}deg) rotateX(${14-k*10}deg) scale(${.9+k*.1})`},{passive:true})}
+
+/* ---------- gold sparks in final ---------- */
+(function(){const c=$('#sparks'),x=c.getContext('2d');let W,H,P=[],vis=false;
+  function size(){W=c.width=c.offsetWidth*Math.min(2,devicePixelRatio);H=c.height=c.offsetHeight*Math.min(2,devicePixelRatio);P=Array.from({length:Math.round(W*H/26000)},()=>({x:Math.random()*W,y:Math.random()*H,r:.8+Math.random()*2.6,v:.2+Math.random()*.7,p:Math.random()*6}))}
+  function f(t){requestAnimationFrame(f);if(!vis||RM)return;x.clearRect(0,0,W,H);P.forEach(p=>{p.y-=p.v;if(p.y<-10){p.y=H+10;p.x=Math.random()*W}const a=.35+.35*Math.sin(t/600+p.p);
+    x.beginPath();x.arc(p.x+Math.sin(t/1400+p.p)*10,p.y,p.r,0,7);x.fillStyle=`rgba(236,183,64,${a})`;x.fill()})}
+  size();addEventListener('resize',size);new IntersectionObserver(e=>{vis=e[0].isIntersecting},{rootMargin:'60px'}).observe(c);requestAnimationFrame(f)})();
 
 observe();
 </script>
