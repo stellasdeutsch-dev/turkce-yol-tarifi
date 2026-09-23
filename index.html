@@ -509,6 +509,19 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
 
 
 /* whatsapp for KZ */
+.wa-ic{flex:none;width:42px;height:42px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 18px -10px rgba(37,211,102,.95);transition:transform .25s;position:relative}
+.wa-ic svg{width:22px;height:22px}
+.wa-ic:hover{transform:scale(1.08)}
+.wa-ic:after{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid #25d366;opacity:0;animation:waPing 2.8s ease-out infinite}
+@keyframes waPing{0%{opacity:.7;transform:scale(.85)}70%,100%{opacity:0;transform:scale(1.35)}}
+.hdr .wa-ic{margin-left:8px;width:40px;height:40px}
+.logo b{white-space:nowrap}
+@media (max-width:420px){.hdr .btn-o{padding:0 11px;letter-spacing:.1em;font-size:10px}.hdr .wrap{gap:8px}}
+.sticky .wa-ic{width:46px;height:46px}
+.wa.center-wa{max-width:440px;margin:18px auto 0}
+.foot-wa{display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;color:#1f9d55;font-weight:600;text-decoration:none;font-size:12.5px}
+.foot-wa i{width:26px;height:26px;border-radius:50%;background:#25d366;display:grid;place-items:center}.foot-wa i svg{width:15px;height:15px}
+
 .wa{display:flex;align-items:center;gap:12px;margin-top:12px;padding:12px 14px;border-radius:12px;background:#f1fbf4;border:1.5px solid #cdeed8;text-decoration:none;font-size:12.5px;line-height:1.4;color:var(--ink2);text-align:left;transition:transform .25s,box-shadow .25s;position:relative;z-index:1}
 .wa:hover{transform:translateY(-2px);box-shadow:0 14px 24px -16px rgba(37,211,102,.7)}
 .wa i{flex:none;width:34px;height:34px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 14px -8px rgba(37,211,102,.9)}
@@ -589,6 +602,7 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
     </a>
     <div class="mid"><b>A0 → C1 · $30</b><span>Один раз. Доступ навсегда</span></div>
     <a class="btn-o" href="https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41" target="_blank" rel="noopener" data-cta="header">Получить доступ</a>
+    <a class="wa-ic" href="https://wa.me/message/RCHLEOGGLZ5OC1" target="_blank" rel="noopener" data-wa="header" aria-label="Купить через WhatsApp" title="Купить через WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 4.5A11.4 11.4 0 0 0 6.2 21.7L4.6 27.4l5.9-1.5A11.4 11.4 0 1 0 16 4.5zm0 20.8a9.4 9.4 0 0 1-4.8-1.3l-.3-.2-3.5.9.9-3.4-.2-.4A9.4 9.4 0 1 1 16 25.3zm5.2-7c-.3-.1-1.7-.8-1.9-.9s-.4-.1-.6.1-.7.9-.9 1.1-.3.2-.6.1a7.7 7.7 0 0 1-3.8-3.3c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.6-.5h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg></a>
   </div>
   <div class="prog" id="prog"></div>
 </header>
@@ -922,6 +936,7 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
         <div class="big" id="cOut">5 ч</div>
         <p id="cTxt"></p>
         <a class="btn" href="#platform">Как это исправить</a>
+        <a class="wa center-wa" href="https://wa.me/message/RCHLEOGGLZ5OC1" target="_blank" rel="noopener" data-wa="calc"><i><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 4.5A11.4 11.4 0 0 0 6.2 21.7L4.6 27.4l5.9-1.5A11.4 11.4 0 1 0 16 4.5zm0 20.8a9.4 9.4 0 0 1-4.8-1.3l-.3-.2-3.5.9.9-3.4-.2-.4A9.4 9.4 0 1 1 16 25.3zm5.2-7c-.3-.1-1.7-.8-1.9-.9s-.4-.1-.6.1-.7.9-.9 1.1-.3.2-.6.1a7.7 7.7 0 0 1-3.8-3.3c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.6-.5h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg></i><span><b>Вы из Казахстана?</b> Если оплата не проходит, купите доступ через WhatsApp</span></a>
       </div>
     </div>
   </div>
@@ -944,6 +959,7 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
       <p class="lead rv">Урок про дорогу — один гайд. В Alterna их 128. Плюс мультфильмы, подкасты, приложения, книги. Разложено по уровням. Смотрите сами, это запись экрана, без монтажа.</p>
       <div class="vtabs rv" id="vtabs"></div>
       <ul class="dots rv" id="vdesc"></ul>
+      <div class="rv"><a class="wa" href="https://wa.me/message/RCHLEOGGLZ5OC1" target="_blank" rel="noopener" data-wa="platform"><i><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 4.5A11.4 11.4 0 0 0 6.2 21.7L4.6 27.4l5.9-1.5A11.4 11.4 0 1 0 16 4.5zm0 20.8a9.4 9.4 0 0 1-4.8-1.3l-.3-.2-3.5.9.9-3.4-.2-.4A9.4 9.4 0 1 1 16 25.3zm5.2-7c-.3-.1-1.7-.8-1.9-.9s-.4-.1-.6.1-.7.9-.9 1.1-.3.2-.6.1a7.7 7.7 0 0 1-3.8-3.3c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.6-.5h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg></i><span><b>Хотите такой же доступ?</b> Из Казахстана удобнее купить через WhatsApp</span></a></div>
     </div>
   </div>
   <div class="wrap center" style="margin-top:70px">
@@ -969,6 +985,7 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
         <div class="segs" id="segs"></div>
         <div class="small">Первый гайд вы прошли на этой странице. Осталось 127. И они уже написаны.</div>
       </div>
+      <div class="rv"><a class="wa" href="https://wa.me/message/RCHLEOGGLZ5OC1" target="_blank" rel="noopener" data-wa="notion"><i><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 4.5A11.4 11.4 0 0 0 6.2 21.7L4.6 27.4l5.9-1.5A11.4 11.4 0 1 0 16 4.5zm0 20.8a9.4 9.4 0 0 1-4.8-1.3l-.3-.2-3.5.9.9-3.4-.2-.4A9.4 9.4 0 1 1 16 25.3zm5.2-7c-.3-.1-1.7-.8-1.9-.9s-.4-.1-.6.1-.7.9-.9 1.1-.3.2-.6.1a7.7 7.7 0 0 1-3.8-3.3c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.6-.5h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg></i><span><b>Продолжить с гайда №2?</b> Из Казахстана удобнее купить через WhatsApp</span></a></div>
     </div>
   </div>
 </section>
@@ -1103,10 +1120,11 @@ footer{padding:26px 0 110px;text-align:center;font-size:11px;color:var(--muted)}
 </section>
 
 </main>
-<footer>Alterna Türkçe · Тимур Ахметов · урок «Yol tarifi» · 2026</footer>
+<footer><a class="foot-wa" href="https://wa.me/message/RCHLEOGGLZ5OC1" target="_blank" rel="noopener" data-wa="footer"><i><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 4.5A11.4 11.4 0 0 0 6.2 21.7L4.6 27.4l5.9-1.5A11.4 11.4 0 1 0 16 4.5zm0 20.8a9.4 9.4 0 0 1-4.8-1.3l-.3-.2-3.5.9.9-3.4-.2-.4A9.4 9.4 0 1 1 16 25.3zm5.2-7c-.3-.1-1.7-.8-1.9-.9s-.4-.1-.6.1-.7.9-.9 1.1-.3.2-.6.1a7.7 7.7 0 0 1-3.8-3.3c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.6-.5h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg></i>WhatsApp: покупка из Казахстана</a><br>Alterna Türkçe · Тимур Ахметов · урок «Yol tarifi» · 2026</footer>
 
 <div class="sticky" id="sticky">
   <div class="t"><b>Alterna A0 → C1 · $30</b>128 гайдов · 1716 материалов · навсегда</div>
+  <a class="wa-ic" href="https://wa.me/message/RCHLEOGGLZ5OC1" target="_blank" rel="noopener" data-wa="sticky" aria-label="Купить через WhatsApp" title="Купить через WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 4.5A11.4 11.4 0 0 0 6.2 21.7L4.6 27.4l5.9-1.5A11.4 11.4 0 1 0 16 4.5zm0 20.8a9.4 9.4 0 0 1-4.8-1.3l-.3-.2-3.5.9.9-3.4-.2-.4A9.4 9.4 0 1 1 16 25.3zm5.2-7c-.3-.1-1.7-.8-1.9-.9s-.4-.1-.6.1-.7.9-.9 1.1-.3.2-.6.1a7.7 7.7 0 0 1-3.8-3.3c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.6-.5h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg></a>
   <a class="btn" href="https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41" target="_blank" rel="noopener" data-cta="sticky">Доступ</a>
 </div>
 <div class="toast" id="toast"></div>
@@ -1336,7 +1354,7 @@ function renderZ(){
   if(zi>=QZ.length){if(zs>=3)setTimeout(()=>boomAt(b),200);const lvl=zs===5?'Местный житель':zs>=3?'Уверенный турист':'Турист с навигатором';
     b.innerHTML=`<div class="res fade"><div class="small">Ваш результат</div><div class="big">${zs}/5</div><div class="q" style="margin:12px 0 6px">${lvl}</div>
     <p class="small" style="max-width:420px;margin:0 auto">Это был 1 гайд из 128. Представьте, как вы будете понимать турецкий, когда пройдёте остальные.</p>
-    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px"><a class="btn" href="https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41" target="_blank" rel="noopener" data-cta="quiz">Продолжить в Alterna</a><button class="btn-o" style="height:58px" onclick="zi=0;zs=0;renderZ()">Ещё раз</button></div></div>`;return}
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px"><a class="btn" href="https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41" target="_blank" rel="noopener" data-cta="quiz">Продолжить в Alterna</a><button class="btn-o" style="height:58px" onclick="zi=0;zs=0;renderZ()">Ещё раз</button></div><a class="wa center-wa" href="https://wa.me/message/RCHLEOGGLZ5OC1" target="_blank" rel="noopener" data-wa="quiz"><i><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 4.5A11.4 11.4 0 0 0 6.2 21.7L4.6 27.4l5.9-1.5A11.4 11.4 0 1 0 16 4.5zm0 20.8a9.4 9.4 0 0 1-4.8-1.3l-.3-.2-3.5.9.9-3.4-.2-.4A9.4 9.4 0 1 1 16 25.3zm5.2-7c-.3-.1-1.7-.8-1.9-.9s-.4-.1-.6.1-.7.9-.9 1.1-.3.2-.6.1a7.7 7.7 0 0 1-3.8-3.3c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.6-.5h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg></i><span><b>Вы из Казахстана?</b> Если оплата не проходит, купите доступ через WhatsApp</span></a></div>`;return}
   const z=QZ[zi];zsel=-1;zchecked=false;
   b.innerHTML=`<div class="fade"><div class="small">Вопрос ${zi+1} из ${QZ.length}</div><div class="bar" style="max-width:380px"><i style="width:${(zi+1)/QZ.length*100}%"></i></div>
    <div class="q">${z.q}</div><div class="opts">${z.o.map((o,i)=>`<button class="opt" data-i="${i}">${o}</button>`).join('')}</div>
